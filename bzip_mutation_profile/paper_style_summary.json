@@ -1,0 +1,9616 @@
+{
+  "method": "vsearch --fastq_mergepairs --fastq_maxee 0.5, cutadapt -a AGATCGGAAGAGC --overlap 10, perfect match to an expected NNK/NNS sequence",
+  "retained_reads": 164400394,
+  "classes": {
+    "wt": 142427245,
+    "other": 12481411,
+    "programmed": 9491738
+  },
+  "programmed_fraction": 0.05773549423488608,
+  "wildtype_fraction": 0.8663436962322608,
+  "other_fraction": 0.07592080953285306,
+  "percentile_10": 4.121887931728436e-05,
+  "percentile_90": 0.0010479877560390762,
+  "logdiff": 1.4052600289280062,
+  "screening_efficiency": 0.0022708207757942567,
+  "per_codon": {
+    "267": 31131,
+    "268": 19516,
+    "269": 12146,
+    "270": 42714,
+    "271": 86769,
+    "272": 21454,
+    "273": 148803,
+    "274": 169444,
+    "275": 101137,
+    "276": 2448477,
+    "277": 31966,
+    "278": 871621,
+    "279": 91989,
+    "280": 79050,
+    "281": 75804,
+    "282": 36916,
+    "283": 1820915,
+    "284": 63086,
+    "285": 87338,
+    "286": 206590,
+    "287": 49066,
+    "288": 59411,
+    "289": 1187633,
+    "290": 79360,
+    "291": 15205,
+    "292": 6515,
+    "293": 30752,
+    "294": 2565,
+    "295": 47826,
+    "296": 59225,
+    "297": 4533,
+    "298": 48014,
+    "299": 28510,
+    "300": 48028,
+    "301": 27295,
+    "302": 4951,
+    "303": 39923,
+    "304": 5875,
+    "305": 46629,
+    "306": 4198,
+    "307": 49285,
+    "308": 51472,
+    "309": 24322,
+    "310": 106534,
+    "311": 9719,
+    "312": 6599,
+    "313": 7486,
+    "314": 9939,
+    "315": 18113,
+    "316": 13220,
+    "317": 80583,
+    "318": 48238,
+    "319": 71363,
+    "320": 40681,
+    "321": 11353,
+    "322": 54248,
+    "323": 13644,
+    "324": 44194,
+    "325": 252933,
+    "326": 102534,
+    "327": 28657,
+    "328": 173001,
+    "329": 31240
+  },
+  "codons": [
+    {
+      "position": 267,
+      "wt_codon": "CGC",
+      "wt_aa": "R",
+      "count": 31131,
+      "frequency": 0.00018936086004757387,
+      "non_wt_aa": 6,
+      "stop_count": 0,
+      "designed_seen": 9,
+      "top": [
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 16495
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 14479
+        },
+        {
+          "codon": "TGT",
+          "aa": "C",
+          "count": 98
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 44
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 10
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 2
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 1
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 268,
+      "wt_codon": "ATC",
+      "wt_aa": "I",
+      "count": 19516,
+      "frequency": 0.0001187101777870435,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 7,
+      "top": [
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 12650
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 6850
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 7
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 4
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 2
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 2
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 269,
+      "wt_codon": "AAA",
+      "wt_aa": "K",
+      "count": 12146,
+      "frequency": 7.388060152702554e-05,
+      "non_wt_aa": 4,
+      "stop_count": 2,
+      "designed_seen": 6,
+      "top": [
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 11765
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 372
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 4
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 2
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 2
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 270,
+      "wt_codon": "GTG",
+      "wt_aa": "V",
+      "count": 42714,
+      "frequency": 0.00025981689557264687,
+      "non_wt_aa": 9,
+      "stop_count": 0,
+      "designed_seen": 12,
+      "top": [
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 18602
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 7825
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 6374
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 4917
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 4008
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 605
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 291
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 85
+        }
+      ]
+    },
+    {
+      "position": 271,
+      "wt_codon": "GAG",
+      "wt_aa": "E",
+      "count": 86769,
+      "frequency": 0.0005277907059030528,
+      "non_wt_aa": 19,
+      "stop_count": 20584,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 20584
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 20091
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 19580
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 7582
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 6230
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 2474
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 1269
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 782
+        }
+      ]
+    },
+    {
+      "position": 272,
+      "wt_codon": "CGC",
+      "wt_aa": "R",
+      "count": 21454,
+      "frequency": 0.0001304984707031785,
+      "non_wt_aa": 19,
+      "stop_count": 257,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 4445
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 3859
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 2488
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 1197
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 1098
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 827
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 794
+        },
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 743
+        }
+      ]
+    },
+    {
+      "position": 273,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 148803,
+      "frequency": 0.0009051255680080669,
+      "non_wt_aa": 19,
+      "stop_count": 6325,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 21646
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 17325
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 16740
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 15247
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 15052
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 11193
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 9126
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 6499
+        }
+      ]
+    },
+    {
+      "position": 274,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 169444,
+      "frequency": 0.0010306787950885325,
+      "non_wt_aa": 19,
+      "stop_count": 2776,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 69265
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 20074
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 14549
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 12668
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 9517
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 8357
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 2882
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 2776
+        }
+      ]
+    },
+    {
+      "position": 275,
+      "wt_codon": "CTG",
+      "wt_aa": "L",
+      "count": 101137,
+      "frequency": 0.0006151870901233971,
+      "non_wt_aa": 19,
+      "stop_count": 506,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 25877
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 19559
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 12758
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 11156
+        },
+        {
+          "codon": "TGT",
+          "aa": "C",
+          "count": 5280
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 3335
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 2475
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 2356
+        }
+      ]
+    },
+    {
+      "position": 276,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 2448477,
+      "frequency": 0.014893376715386705,
+      "non_wt_aa": 19,
+      "stop_count": 781,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 2362776
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 18266
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 15035
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 11242
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 9804
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 6972
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 4263
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 2649
+        }
+      ]
+    },
+    {
+      "position": 277,
+      "wt_codon": "AAC",
+      "wt_aa": "N",
+      "count": 31966,
+      "frequency": 0.00019443992330091375,
+      "non_wt_aa": 19,
+      "stop_count": 94,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 8120
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 7531
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 4074
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 1102
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 962
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 888
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 824
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 823
+        }
+      ]
+    },
+    {
+      "position": 278,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 871621,
+      "frequency": 0.005301818193939365,
+      "non_wt_aa": 19,
+      "stop_count": 774,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 681586
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 44927
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 33456
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 31086
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 17382
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 14953
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 9781
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 6638
+        }
+      ]
+    },
+    {
+      "position": 279,
+      "wt_codon": "CTG",
+      "wt_aa": "L",
+      "count": 91989,
+      "frequency": 0.0005595424546245308,
+      "non_wt_aa": 19,
+      "stop_count": 361,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 18557
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 16283
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 13352
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 10966
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 3819
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 3464
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 2244
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 1952
+        }
+      ]
+    },
+    {
+      "position": 280,
+      "wt_codon": "GCG",
+      "wt_aa": "A",
+      "count": 79050,
+      "frequency": 0.0004808382636844532,
+      "non_wt_aa": 19,
+      "stop_count": 1277,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 19755
+        },
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 15365
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 8658
+        },
+        {
+          "codon": "TCG",
+          "aa": "S",
+          "count": 8608
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 7625
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 2008
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1923
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 1646
+        }
+      ]
+    },
+    {
+      "position": 281,
+      "wt_codon": "GCC",
+      "wt_aa": "A",
+      "count": 75804,
+      "frequency": 0.0004610937854564996,
+      "non_wt_aa": 19,
+      "stop_count": 891,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 32103
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 17599
+        },
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 5182
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 2251
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 1270
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 1252
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1215
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 1105
+        }
+      ]
+    },
+    {
+      "position": 282,
+      "wt_codon": "ACC",
+      "wt_aa": "T",
+      "count": 36916,
+      "frequency": 0.0002245493401919706,
+      "non_wt_aa": 19,
+      "stop_count": 522,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 20847
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 3963
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 1298
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1044
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 782
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 751
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 721
+        },
+        {
+          "codon": "TCG",
+          "aa": "S",
+          "count": 618
+        }
+      ]
+    },
+    {
+      "position": 283,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 1820915,
+      "frequency": 0.011076098759228034,
+      "non_wt_aa": 19,
+      "stop_count": 3502,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 1705737
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 54235
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 12208
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 11264
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 8636
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 5460
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 3502
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 3444
+        }
+      ]
+    },
+    {
+      "position": 284,
+      "wt_codon": "TGC",
+      "wt_aa": "C",
+      "count": 63086,
+      "frequency": 0.00038373387353317416,
+      "non_wt_aa": 19,
+      "stop_count": 650,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 32733
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 10474
+        },
+        {
+          "codon": "TGT",
+          "aa": "C",
+          "count": 4150
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 2204
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 1485
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 1134
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 1029
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 796
+        }
+      ]
+    },
+    {
+      "position": 285,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 87338,
+      "frequency": 0.0005312517681679036,
+      "non_wt_aa": 19,
+      "stop_count": 1411,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 25286
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 14609
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 10472
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 7003
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 5610
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 2458
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 2103
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1965
+        }
+      ]
+    },
+    {
+      "position": 286,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 206590,
+      "frequency": 0.0012566271586916026,
+      "non_wt_aa": 19,
+      "stop_count": 1521,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 146109
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 15710
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 13044
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 13004
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 7313
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 1521
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 1379
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1004
+        }
+      ]
+    },
+    {
+      "position": 287,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 49066,
+      "frequency": 0.0002984542725609283,
+      "non_wt_aa": 19,
+      "stop_count": 6,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 13735
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 11860
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 5658
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 4967
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 3496
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 1731
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 1416
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 659
+        }
+      ]
+    },
+    {
+      "position": 288,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 59411,
+      "frequency": 0.0003613799125079956,
+      "non_wt_aa": 19,
+      "stop_count": 2246,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 20478
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 15295
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 7537
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 2480
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 2246
+        },
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 1823
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 903
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 814
+        }
+      ]
+    },
+    {
+      "position": 289,
+      "wt_codon": "CTG",
+      "wt_aa": "L",
+      "count": 1187633,
+      "frequency": 0.007224027699106366,
+      "non_wt_aa": 19,
+      "stop_count": 287,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 1117871
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 21377
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 15912
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 8812
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 4778
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 2603
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 2471
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 1880
+        }
+      ]
+    },
+    {
+      "position": 290,
+      "wt_codon": "GAG",
+      "wt_aa": "E",
+      "count": 79360,
+      "frequency": 0.00048272390393419616,
+      "non_wt_aa": 19,
+      "stop_count": 29167,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 29167
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 17938
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 10712
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 7124
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 3383
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 3248
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 1931
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 539
+        }
+      ]
+    },
+    {
+      "position": 291,
+      "wt_codon": "CGC",
+      "wt_aa": "R",
+      "count": 15205,
+      "frequency": 9.248761289465037e-05,
+      "non_wt_aa": 19,
+      "stop_count": 218,
+      "designed_seen": 32,
+      "top": [
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 4336
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1450
+        },
+        {
+          "codon": "TGT",
+          "aa": "C",
+          "count": 1396
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 1059
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 921
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 576
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 553
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 522
+        }
+      ]
+    },
+    {
+      "position": 292,
+      "wt_codon": "ATC",
+      "wt_aa": "I",
+      "count": 6515,
+      "frequency": 3.962885879701724e-05,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 5637
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 869
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 4
+        },
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 3
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "position": 293,
+      "wt_codon": "GCG",
+      "wt_aa": "A",
+      "count": 30752,
+      "frequency": 0.00018705551277450102,
+      "non_wt_aa": 9,
+      "stop_count": 0,
+      "designed_seen": 15,
+      "top": [
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 8968
+        },
+        {
+          "codon": "TCG",
+          "aa": "S",
+          "count": 7748
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 5217
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 3620
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 3612
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 996
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 435
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 58
+        }
+      ]
+    },
+    {
+      "position": 294,
+      "wt_codon": "CGC",
+      "wt_aa": "R",
+      "count": 2565,
+      "frequency": 1.560215238900218e-05,
+      "non_wt_aa": 2,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 2165
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 383
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 14
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 2
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 295,
+      "wt_codon": "CTG",
+      "wt_aa": "L",
+      "count": 47826,
+      "frequency": 0.00029091171156195647,
+      "non_wt_aa": 8,
+      "stop_count": 0,
+      "designed_seen": 13,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 20319
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 9731
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 8127
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 6877
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 1174
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 743
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 612
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 209
+        }
+      ]
+    },
+    {
+      "position": 296,
+      "wt_codon": "GAG",
+      "wt_aa": "E",
+      "count": 59225,
+      "frequency": 0.0003602485283581498,
+      "non_wt_aa": 9,
+      "stop_count": 20768,
+      "designed_seen": 14,
+      "top": [
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 20768
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 17677
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 14475
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 2730
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 2245
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 1017
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 215
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 81
+        }
+      ]
+    },
+    {
+      "position": 297,
+      "wt_codon": "GAC",
+      "wt_aa": "D",
+      "count": 4533,
+      "frequency": 2.757292661962842e-05,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 4024
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 498
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 9
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 1
+        },
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 298,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 48014,
+      "frequency": 0.00029205526113276834,
+      "non_wt_aa": 9,
+      "stop_count": 480,
+      "designed_seen": 11,
+      "top": [
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 19937
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 14472
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 11039
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1379
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 509
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 480
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 191
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "position": 299,
+      "wt_codon": "GTG",
+      "wt_aa": "V",
+      "count": 28510,
+      "frequency": 0.00017341807587152133,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 12,
+      "top": [
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 10810
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 10141
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 4009
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 2179
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 542
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 414
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 393
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "position": 300,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 48028,
+      "frequency": 0.00029214041907953093,
+      "non_wt_aa": 9,
+      "stop_count": 1049,
+      "designed_seen": 11,
+      "top": [
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 17488
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 14137
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 13927
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 1049
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 531
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 500
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 392
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "position": 301,
+      "wt_codon": "ACG",
+      "wt_aa": "T",
+      "count": 27295,
+      "frequency": 0.00016602758263462556,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 10,
+      "top": [
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 9115
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 8082
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 4335
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 4016
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 981
+        },
+        {
+          "codon": "TCG",
+          "aa": "S",
+          "count": 571
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 155
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 38
+        }
+      ]
+    },
+    {
+      "position": 302,
+      "wt_codon": "CTC",
+      "wt_aa": "L",
+      "count": 4951,
+      "frequency": 3.0115499601539886e-05,
+      "non_wt_aa": 2,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 4196
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 752
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 1
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 1
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 303,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 39923,
+      "frequency": 0.00024284005061447724,
+      "non_wt_aa": 7,
+      "stop_count": 1186,
+      "designed_seen": 9,
+      "top": [
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 16824
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 11534
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 8653
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 1186
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 897
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 430
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 397
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "position": 304,
+      "wt_codon": "GCC",
+      "wt_aa": "A",
+      "count": 5875,
+      "frequency": 3.57359240878705e-05,
+      "non_wt_aa": 3,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 5208
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 660
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 5
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 1
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 305,
+      "wt_codon": "GAG",
+      "wt_aa": "E",
+      "count": 46629,
+      "frequency": 0.00028363070711375545,
+      "non_wt_aa": 8,
+      "stop_count": 20966,
+      "designed_seen": 10,
+      "top": [
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 20966
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 13301
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 5906
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 4746
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 1016
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 391
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 228
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 73
+        }
+      ]
+    },
+    {
+      "position": 306,
+      "wt_codon": "AAC",
+      "wt_aa": "N",
+      "count": 4198,
+      "frequency": 2.5535218607809418e-05,
+      "non_wt_aa": 2,
+      "stop_count": 0,
+      "designed_seen": 3,
+      "top": [
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 3683
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 514
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 307,
+      "wt_codon": "GCG",
+      "wt_aa": "A",
+      "count": 49285,
+      "frequency": 0.0002997863861567144,
+      "non_wt_aa": 10,
+      "stop_count": 0,
+      "designed_seen": 15,
+      "top": [
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 25440
+        },
+        {
+          "codon": "TCG",
+          "aa": "S",
+          "count": 7871
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 6826
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 5171
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 2192
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1050
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 545
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "position": 308,
+      "wt_codon": "GGG",
+      "wt_aa": "G",
+      "count": 51472,
+      "frequency": 0.00031308927398312683,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 13,
+      "top": [
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 28402
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 10345
+        },
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 3848
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 2972
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 2470
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 2428
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 877
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 56
+        }
+      ]
+    },
+    {
+      "position": 309,
+      "wt_codon": "CTG",
+      "wt_aa": "L",
+      "count": 24322,
+      "frequency": 0.00014794368436854232,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 11,
+      "top": [
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 9673
+        },
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 5654
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 5619
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 2681
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 295
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 292
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 102
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "position": 310,
+      "wt_codon": "TCG",
+      "wt_aa": "S",
+      "count": 106534,
+      "frequency": 0.0006480154786003737,
+      "non_wt_aa": 11,
+      "stop_count": 13355,
+      "designed_seen": 17,
+      "top": [
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 54428
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 15910
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 13355
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 11028
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 7880
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 2074
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1734
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 39
+        }
+      ]
+    },
+    {
+      "position": 311,
+      "wt_codon": "AGT",
+      "wt_aa": "S",
+      "count": 9719,
+      "frequency": 5.9117863184683124e-05,
+      "non_wt_aa": 6,
+      "stop_count": 0,
+      "designed_seen": 8,
+      "top": [
+        {
+          "codon": "AGC",
+          "aa": "S",
+          "count": 6620
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 3087
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 3
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 3
+        },
+        {
+          "codon": "AAC",
+          "aa": "N",
+          "count": 3
+        },
+        {
+          "codon": "GGC",
+          "aa": "G",
+          "count": 1
+        },
+        {
+          "codon": "ACC",
+          "aa": "T",
+          "count": 1
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 312,
+      "wt_codon": "ACC",
+      "wt_aa": "T",
+      "count": 6599,
+      "frequency": 4.0139806477592746e-05,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 6,
+      "top": [
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 5063
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 1531
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 2
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 1
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 313,
+      "wt_codon": "GCC",
+      "wt_aa": "A",
+      "count": 7486,
+      "frequency": 4.553517067605081e-05,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 6,
+      "top": [
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 6799
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 674
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 8
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 2
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 2
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 314,
+      "wt_codon": "GGC",
+      "wt_aa": "G",
+      "count": 9939,
+      "frequency": 6.045605949095232e-05,
+      "non_wt_aa": 5,
+      "stop_count": 0,
+      "designed_seen": 7,
+      "top": [
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 8921
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1000
+        },
+        {
+          "codon": "TGT",
+          "aa": "C",
+          "count": 9
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 5
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 2
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 1
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 315,
+      "wt_codon": "CTC",
+      "wt_aa": "L",
+      "count": 18113,
+      "frequency": 0.00011017613497933588,
+      "non_wt_aa": 3,
+      "stop_count": 0,
+      "designed_seen": 7,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 17208
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 860
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 21
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 13
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 8
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 2
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 316,
+      "wt_codon": "CTC",
+      "wt_aa": "L",
+      "count": 13220,
+      "frequency": 8.041343258581242e-05,
+      "non_wt_aa": 3,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 10521
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 2681
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 13
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 3
+        },
+        {
+          "codon": "CCT",
+          "aa": "P",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "position": 317,
+      "wt_codon": "CGG",
+      "wt_aa": "R",
+      "count": 80583,
+      "frequency": 0.0004901630588549562,
+      "non_wt_aa": 11,
+      "stop_count": 0,
+      "designed_seen": 17,
+      "top": [
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 36432
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 17405
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 11987
+        },
+        {
+          "codon": "TGG",
+          "aa": "W",
+          "count": 6263
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 5424
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1997
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 771
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 139
+        }
+      ]
+    },
+    {
+      "position": 318,
+      "wt_codon": "GAG",
+      "wt_aa": "E",
+      "count": 48238,
+      "frequency": 0.0002934177882809697,
+      "non_wt_aa": 8,
+      "stop_count": 17304,
+      "designed_seen": 10,
+      "top": [
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 20366
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 17304
+        },
+        {
+          "codon": "GAT",
+          "aa": "D",
+          "count": 5019
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 3250
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 2033
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 145
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 69
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 49
+        }
+      ]
+    },
+    {
+      "position": 319,
+      "wt_codon": "CAG",
+      "wt_aa": "Q",
+      "count": 71363,
+      "frequency": 0.000434080468201311,
+      "non_wt_aa": 10,
+      "stop_count": 23273,
+      "designed_seen": 16,
+      "top": [
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 23273
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 19165
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 16020
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 5494
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 4352
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 1576
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 1436
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "position": 320,
+      "wt_codon": "GTG",
+      "wt_aa": "V",
+      "count": 40681,
+      "frequency": 0.0002474507451606229,
+      "non_wt_aa": 9,
+      "stop_count": 0,
+      "designed_seen": 14,
+      "top": [
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 12586
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 12191
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 6984
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 5676
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1504
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 1270
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 444
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "position": 321,
+      "wt_codon": "GCC",
+      "wt_aa": "A",
+      "count": 11353,
+      "frequency": 6.90570121139734e-05,
+      "non_wt_aa": 4,
+      "stop_count": 0,
+      "designed_seen": 6,
+      "top": [
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 9133
+        },
+        {
+          "codon": "GCG",
+          "aa": "A",
+          "count": 2207
+        },
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 6
+        },
+        {
+          "codon": "TCT",
+          "aa": "S",
+          "count": 5
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 322,
+      "wt_codon": "CAG",
+      "wt_aa": "Q",
+      "count": 54248,
+      "frequency": 0.0003299748782840508,
+      "non_wt_aa": 10,
+      "stop_count": 10598,
+      "designed_seen": 13,
+      "top": [
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 17764
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 13583
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 10598
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 9120
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 2667
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 251
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 233
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "position": 323,
+      "wt_codon": "CTC",
+      "wt_aa": "L",
+      "count": 13644,
+      "frequency": 8.299250183062214e-05,
+      "non_wt_aa": 2,
+      "stop_count": 0,
+      "designed_seen": 5,
+      "top": [
+        {
+          "codon": "CTT",
+          "aa": "L",
+          "count": 12963
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 656
+        },
+        {
+          "codon": "CGT",
+          "aa": "R",
+          "count": 15
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 9
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 324,
+      "wt_codon": "AAA",
+      "wt_aa": "K",
+      "count": 44194,
+      "frequency": 0.0002688193070875487,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 8,
+      "top": [
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 43318
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 684
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 178
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 9
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 2
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 1
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "position": 325,
+      "wt_codon": "CAG",
+      "wt_aa": "Q",
+      "count": 252933,
+      "frequency": 0.0015385182106072081,
+      "non_wt_aa": 12,
+      "stop_count": 33187,
+      "designed_seen": 17,
+      "top": [
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 124862
+        },
+        {
+          "codon": "CAT",
+          "aa": "H",
+          "count": 68397
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 33187
+        },
+        {
+          "codon": "CGG",
+          "aa": "R",
+          "count": 22932
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 2523
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 491
+        },
+        {
+          "codon": "CCG",
+          "aa": "P",
+          "count": 344
+        },
+        {
+          "codon": "TAT",
+          "aa": "Y",
+          "count": 65
+        }
+      ]
+    },
+    {
+      "position": 326,
+      "wt_codon": "AAG",
+      "wt_aa": "K",
+      "count": 102534,
+      "frequency": 0.0006236846366682065,
+      "non_wt_aa": 11,
+      "stop_count": 1384,
+      "designed_seen": 14,
+      "top": [
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 41123
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 30404
+        },
+        {
+          "codon": "GAG",
+          "aa": "E",
+          "count": 27278
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 1453
+        },
+        {
+          "codon": "TAG",
+          "aa": "*",
+          "count": 1384
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 483
+        },
+        {
+          "codon": "CAG",
+          "aa": "Q",
+          "count": 350
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "position": 327,
+      "wt_codon": "GTC",
+      "wt_aa": "V",
+      "count": 28657,
+      "frequency": 0.00017431223431252848,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 11,
+      "top": [
+        {
+          "codon": "GTT",
+          "aa": "V",
+          "count": 21493
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 7105
+        },
+        {
+          "codon": "GGT",
+          "aa": "G",
+          "count": 26
+        },
+        {
+          "codon": "TTT",
+          "aa": "F",
+          "count": 10
+        },
+        {
+          "codon": "GGG",
+          "aa": "G",
+          "count": 8
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 4
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 4
+        },
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "position": 328,
+      "wt_codon": "ATG",
+      "wt_aa": "M",
+      "count": 173001,
+      "frequency": 0.0010523149962767121,
+      "non_wt_aa": 16,
+      "stop_count": 0,
+      "designed_seen": 20,
+      "top": [
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 68000
+        },
+        {
+          "codon": "AGG",
+          "aa": "R",
+          "count": 31464
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 30763
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 21040
+        },
+        {
+          "codon": "GTG",
+          "aa": "V",
+          "count": 19014
+        },
+        {
+          "codon": "CTG",
+          "aa": "L",
+          "count": 2038
+        },
+        {
+          "codon": "TTG",
+          "aa": "L",
+          "count": 584
+        },
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 45
+        }
+      ]
+    },
+    {
+      "position": 329,
+      "wt_codon": "ACC",
+      "wt_aa": "T",
+      "count": 31240,
+      "frequency": 0.0001900238754902254,
+      "non_wt_aa": 7,
+      "stop_count": 0,
+      "designed_seen": 10,
+      "top": [
+        {
+          "codon": "ACT",
+          "aa": "T",
+          "count": 22508
+        },
+        {
+          "codon": "ACG",
+          "aa": "T",
+          "count": 8531
+        },
+        {
+          "codon": "ATT",
+          "aa": "I",
+          "count": 125
+        },
+        {
+          "codon": "GCT",
+          "aa": "A",
+          "count": 31
+        },
+        {
+          "codon": "AAT",
+          "aa": "N",
+          "count": 19
+        },
+        {
+          "codon": "ATG",
+          "aa": "M",
+          "count": 14
+        },
+        {
+          "codon": "AAG",
+          "aa": "K",
+          "count": 4
+        },
+        {
+          "codon": "AGT",
+          "aa": "S",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "top_alleles": [
+    {
+      "position": 276,
+      "codon": "CTT",
+      "aa": "L",
+      "wt_aa": "R",
+      "count": 2362776
+    },
+    {
+      "position": 283,
+      "codon": "CTG",
+      "aa": "L",
+      "wt_aa": "K",
+      "count": 1705737
+    },
+    {
+      "position": 289,
+      "codon": "AAT",
+      "aa": "N",
+      "wt_aa": "L",
+      "count": 1117871
+    },
+    {
+      "position": 278,
+      "codon": "CTT",
+      "aa": "L",
+      "wt_aa": "R",
+      "count": 681586
+    },
+    {
+      "position": 286,
+      "codon": "ATG",
+      "aa": "M",
+      "wt_aa": "K",
+      "count": 146109
+    },
+    {
+      "position": 325,
+      "codon": "AAG",
+      "aa": "K",
+      "wt_aa": "Q",
+      "count": 124862
+    },
+    {
+      "position": 274,
+      "codon": "ATT",
+      "aa": "I",
+      "wt_aa": "R",
+      "count": 69265
+    },
+    {
+      "position": 325,
+      "codon": "CAT",
+      "aa": "H",
+      "wt_aa": "Q",
+      "count": 68397
+    }
+  ],
+  "alleles": [
+    {
+      "position": 276,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 2362776
+    },
+    {
+      "position": 283,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 1705737
+    },
+    {
+      "position": 289,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1117871
+    },
+    {
+      "position": 278,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 681586
+    },
+    {
+      "position": 286,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 146109
+    },
+    {
+      "position": 325,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 124862
+    },
+    {
+      "position": 274,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 69265
+    },
+    {
+      "position": 325,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 68397
+    },
+    {
+      "position": 328,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 68000
+    },
+    {
+      "position": 310,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 54428
+    },
+    {
+      "position": 283,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 54235
+    },
+    {
+      "position": 278,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 44927
+    },
+    {
+      "position": 324,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 43318
+    },
+    {
+      "position": 326,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 41123
+    },
+    {
+      "position": 317,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 36432
+    },
+    {
+      "position": 278,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 33456
+    },
+    {
+      "position": 325,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 33187
+    },
+    {
+      "position": 284,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 32733
+    },
+    {
+      "position": 281,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 32103
+    },
+    {
+      "position": 328,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 31464
+    },
+    {
+      "position": 278,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 31086
+    },
+    {
+      "position": 328,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 30763
+    },
+    {
+      "position": 326,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 30404
+    },
+    {
+      "position": 290,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 29167
+    },
+    {
+      "position": 308,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 28402
+    },
+    {
+      "position": 326,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 27278
+    },
+    {
+      "position": 275,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 25877
+    },
+    {
+      "position": 307,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 25440
+    },
+    {
+      "position": 285,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 25286
+    },
+    {
+      "position": 319,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 23273
+    },
+    {
+      "position": 325,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 22932
+    },
+    {
+      "position": 329,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 22508
+    },
+    {
+      "position": 273,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 21646
+    },
+    {
+      "position": 327,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 21493
+    },
+    {
+      "position": 289,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 21377
+    },
+    {
+      "position": 328,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 21040
+    },
+    {
+      "position": 305,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 20966
+    },
+    {
+      "position": 282,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 20847
+    },
+    {
+      "position": 296,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 20768
+    },
+    {
+      "position": 271,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 20584
+    },
+    {
+      "position": 288,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 20478
+    },
+    {
+      "position": 318,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 20366
+    },
+    {
+      "position": 295,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 20319
+    },
+    {
+      "position": 271,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 20091
+    },
+    {
+      "position": 274,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 20074
+    },
+    {
+      "position": 298,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 19937
+    },
+    {
+      "position": 280,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 19755
+    },
+    {
+      "position": 271,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 19580
+    },
+    {
+      "position": 275,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 19559
+    },
+    {
+      "position": 319,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 19165
+    },
+    {
+      "position": 328,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 19014
+    },
+    {
+      "position": 270,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 18602
+    },
+    {
+      "position": 279,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 18557
+    },
+    {
+      "position": 276,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 18266
+    },
+    {
+      "position": 290,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 17938
+    },
+    {
+      "position": 322,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 17764
+    },
+    {
+      "position": 296,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 17677
+    },
+    {
+      "position": 281,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 17599
+    },
+    {
+      "position": 300,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 17488
+    },
+    {
+      "position": 317,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 17405
+    },
+    {
+      "position": 278,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 17382
+    },
+    {
+      "position": 273,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 17325
+    },
+    {
+      "position": 318,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 17304
+    },
+    {
+      "position": 315,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 17208
+    },
+    {
+      "position": 303,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 16824
+    },
+    {
+      "position": 273,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 16740
+    },
+    {
+      "position": 267,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 16495
+    },
+    {
+      "position": 279,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 16283
+    },
+    {
+      "position": 319,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 16020
+    },
+    {
+      "position": 289,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 15912
+    },
+    {
+      "position": 310,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 15910
+    },
+    {
+      "position": 286,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 15710
+    },
+    {
+      "position": 280,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 15365
+    },
+    {
+      "position": 288,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 15295
+    },
+    {
+      "position": 273,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 15247
+    },
+    {
+      "position": 273,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 15052
+    },
+    {
+      "position": 276,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 15035
+    },
+    {
+      "position": 278,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 14953
+    },
+    {
+      "position": 285,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 14609
+    },
+    {
+      "position": 274,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 14549
+    },
+    {
+      "position": 267,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 14479
+    },
+    {
+      "position": 296,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 14475
+    },
+    {
+      "position": 298,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 14472
+    },
+    {
+      "position": 300,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 14137
+    },
+    {
+      "position": 300,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 13927
+    },
+    {
+      "position": 287,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 13735
+    },
+    {
+      "position": 322,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 13583
+    },
+    {
+      "position": 310,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 13355
+    },
+    {
+      "position": 279,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 13352
+    },
+    {
+      "position": 305,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 13301
+    },
+    {
+      "position": 286,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 13044
+    },
+    {
+      "position": 286,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 13004
+    },
+    {
+      "position": 323,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 12963
+    },
+    {
+      "position": 275,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 12758
+    },
+    {
+      "position": 274,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 12668
+    },
+    {
+      "position": 268,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 12650
+    },
+    {
+      "position": 320,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 12586
+    },
+    {
+      "position": 283,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 12208
+    },
+    {
+      "position": 320,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 12191
+    },
+    {
+      "position": 317,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 11987
+    },
+    {
+      "position": 287,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 11860
+    },
+    {
+      "position": 269,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 11765
+    },
+    {
+      "position": 303,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 11534
+    },
+    {
+      "position": 283,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 11264
+    },
+    {
+      "position": 276,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 11242
+    },
+    {
+      "position": 273,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 11193
+    },
+    {
+      "position": 275,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 11156
+    },
+    {
+      "position": 298,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 11039
+    },
+    {
+      "position": 310,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 11028
+    },
+    {
+      "position": 279,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 10966
+    },
+    {
+      "position": 299,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 10810
+    },
+    {
+      "position": 290,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 10712
+    },
+    {
+      "position": 322,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 10598
+    },
+    {
+      "position": 316,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 10521
+    },
+    {
+      "position": 284,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 10474
+    },
+    {
+      "position": 285,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 10472
+    },
+    {
+      "position": 308,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 10345
+    },
+    {
+      "position": 299,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 10141
+    },
+    {
+      "position": 276,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 9804
+    },
+    {
+      "position": 278,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 9781
+    },
+    {
+      "position": 295,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 9731
+    },
+    {
+      "position": 309,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 9673
+    },
+    {
+      "position": 274,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 9517
+    },
+    {
+      "position": 321,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 9133
+    },
+    {
+      "position": 273,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 9126
+    },
+    {
+      "position": 322,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 9120
+    },
+    {
+      "position": 301,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 9115
+    },
+    {
+      "position": 293,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 8968
+    },
+    {
+      "position": 314,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 8921
+    },
+    {
+      "position": 289,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 8812
+    },
+    {
+      "position": 280,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 8658
+    },
+    {
+      "position": 303,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 8653
+    },
+    {
+      "position": 283,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 8636
+    },
+    {
+      "position": 280,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 8608
+    },
+    {
+      "position": 329,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 8531
+    },
+    {
+      "position": 274,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 8357
+    },
+    {
+      "position": 295,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 8127
+    },
+    {
+      "position": 277,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 8120
+    },
+    {
+      "position": 301,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 8082
+    },
+    {
+      "position": 310,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 7880
+    },
+    {
+      "position": 307,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 7871
+    },
+    {
+      "position": 270,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 7825
+    },
+    {
+      "position": 293,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 7748
+    },
+    {
+      "position": 280,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 7625
+    },
+    {
+      "position": 271,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 7582
+    },
+    {
+      "position": 288,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 7537
+    },
+    {
+      "position": 277,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 7531
+    },
+    {
+      "position": 286,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 7313
+    },
+    {
+      "position": 290,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 7124
+    },
+    {
+      "position": 327,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 7105
+    },
+    {
+      "position": 285,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 7003
+    },
+    {
+      "position": 320,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 6984
+    },
+    {
+      "position": 276,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 6972
+    },
+    {
+      "position": 295,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 6877
+    },
+    {
+      "position": 268,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 6850
+    },
+    {
+      "position": 307,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 6826
+    },
+    {
+      "position": 313,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 6799
+    },
+    {
+      "position": 278,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 6638
+    },
+    {
+      "position": 311,
+      "codon": "AGC",
+      "aa": "S",
+      "count": 6620
+    },
+    {
+      "position": 273,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 6499
+    },
+    {
+      "position": 278,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 6422
+    },
+    {
+      "position": 270,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 6374
+    },
+    {
+      "position": 273,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 6325
+    },
+    {
+      "position": 317,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 6263
+    },
+    {
+      "position": 271,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 6230
+    },
+    {
+      "position": 305,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 5906
+    },
+    {
+      "position": 320,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 5676
+    },
+    {
+      "position": 287,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 5658
+    },
+    {
+      "position": 309,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 5654
+    },
+    {
+      "position": 292,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 5637
+    },
+    {
+      "position": 309,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 5619
+    },
+    {
+      "position": 285,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 5610
+    },
+    {
+      "position": 319,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 5494
+    },
+    {
+      "position": 283,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 5460
+    },
+    {
+      "position": 317,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 5424
+    },
+    {
+      "position": 275,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 5280
+    },
+    {
+      "position": 293,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 5217
+    },
+    {
+      "position": 304,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 5208
+    },
+    {
+      "position": 281,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 5182
+    },
+    {
+      "position": 307,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 5171
+    },
+    {
+      "position": 312,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 5063
+    },
+    {
+      "position": 318,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 5019
+    },
+    {
+      "position": 287,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 4967
+    },
+    {
+      "position": 270,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 4917
+    },
+    {
+      "position": 289,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 4778
+    },
+    {
+      "position": 305,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 4746
+    },
+    {
+      "position": 272,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 4445
+    },
+    {
+      "position": 319,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 4352
+    },
+    {
+      "position": 291,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 4336
+    },
+    {
+      "position": 301,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 4335
+    },
+    {
+      "position": 276,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 4263
+    },
+    {
+      "position": 302,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 4196
+    },
+    {
+      "position": 284,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 4150
+    },
+    {
+      "position": 277,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 4074
+    },
+    {
+      "position": 297,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 4024
+    },
+    {
+      "position": 301,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 4016
+    },
+    {
+      "position": 299,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 4009
+    },
+    {
+      "position": 270,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 4008
+    },
+    {
+      "position": 282,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 3963
+    },
+    {
+      "position": 272,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 3859
+    },
+    {
+      "position": 308,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 3848
+    },
+    {
+      "position": 279,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 3819
+    },
+    {
+      "position": 306,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 3683
+    },
+    {
+      "position": 293,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 3620
+    },
+    {
+      "position": 293,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 3612
+    },
+    {
+      "position": 283,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 3502
+    },
+    {
+      "position": 287,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 3496
+    },
+    {
+      "position": 279,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 3464
+    },
+    {
+      "position": 283,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 3444
+    },
+    {
+      "position": 290,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 3383
+    },
+    {
+      "position": 278,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 3337
+    },
+    {
+      "position": 275,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 3335
+    },
+    {
+      "position": 273,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 3297
+    },
+    {
+      "position": 318,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 3250
+    },
+    {
+      "position": 290,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 3248
+    },
+    {
+      "position": 273,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 3171
+    },
+    {
+      "position": 311,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 3087
+    },
+    {
+      "position": 278,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 2992
+    },
+    {
+      "position": 308,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 2972
+    },
+    {
+      "position": 274,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 2882
+    },
+    {
+      "position": 274,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 2776
+    },
+    {
+      "position": 296,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 2730
+    },
+    {
+      "position": 309,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 2681
+    },
+    {
+      "position": 316,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 2681
+    },
+    {
+      "position": 322,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 2667
+    },
+    {
+      "position": 276,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2649
+    },
+    {
+      "position": 274,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 2641
+    },
+    {
+      "position": 289,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 2603
+    },
+    {
+      "position": 325,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 2523
+    },
+    {
+      "position": 272,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2488
+    },
+    {
+      "position": 288,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 2480
+    },
+    {
+      "position": 275,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 2475
+    },
+    {
+      "position": 271,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 2474
+    },
+    {
+      "position": 289,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 2471
+    },
+    {
+      "position": 308,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 2470
+    },
+    {
+      "position": 285,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 2458
+    },
+    {
+      "position": 308,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 2428
+    },
+    {
+      "position": 273,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 2363
+    },
+    {
+      "position": 274,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 2359
+    },
+    {
+      "position": 275,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 2356
+    },
+    {
+      "position": 273,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 2323
+    },
+    {
+      "position": 278,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 2309
+    },
+    {
+      "position": 274,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2291
+    },
+    {
+      "position": 281,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 2251
+    },
+    {
+      "position": 288,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 2246
+    },
+    {
+      "position": 296,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 2245
+    },
+    {
+      "position": 279,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 2244
+    },
+    {
+      "position": 283,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 2211
+    },
+    {
+      "position": 321,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 2207
+    },
+    {
+      "position": 284,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 2204
+    },
+    {
+      "position": 307,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 2192
+    },
+    {
+      "position": 299,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 2179
+    },
+    {
+      "position": 294,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 2165
+    },
+    {
+      "position": 274,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 2111
+    },
+    {
+      "position": 285,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 2103
+    },
+    {
+      "position": 310,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 2074
+    },
+    {
+      "position": 274,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 2064
+    },
+    {
+      "position": 328,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 2038
+    },
+    {
+      "position": 318,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 2033
+    },
+    {
+      "position": 280,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2008
+    },
+    {
+      "position": 317,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1997
+    },
+    {
+      "position": 285,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1965
+    },
+    {
+      "position": 279,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 1952
+    },
+    {
+      "position": 278,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1940
+    },
+    {
+      "position": 290,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1931
+    },
+    {
+      "position": 280,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1923
+    },
+    {
+      "position": 289,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1880
+    },
+    {
+      "position": 285,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1847
+    },
+    {
+      "position": 283,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1842
+    },
+    {
+      "position": 274,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1838
+    },
+    {
+      "position": 288,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 1823
+    },
+    {
+      "position": 273,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 1796
+    },
+    {
+      "position": 275,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 1775
+    },
+    {
+      "position": 279,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1767
+    },
+    {
+      "position": 276,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1758
+    },
+    {
+      "position": 310,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1734
+    },
+    {
+      "position": 287,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1731
+    },
+    {
+      "position": 279,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1712
+    },
+    {
+      "position": 285,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1709
+    },
+    {
+      "position": 280,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1646
+    },
+    {
+      "position": 276,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1638
+    },
+    {
+      "position": 285,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 1618
+    },
+    {
+      "position": 274,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 1603
+    },
+    {
+      "position": 274,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 1585
+    },
+    {
+      "position": 319,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 1576
+    },
+    {
+      "position": 275,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1563
+    },
+    {
+      "position": 312,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1531
+    },
+    {
+      "position": 286,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1521
+    },
+    {
+      "position": 320,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1504
+    },
+    {
+      "position": 275,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1497
+    },
+    {
+      "position": 284,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1485
+    },
+    {
+      "position": 278,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1481
+    },
+    {
+      "position": 273,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1473
+    },
+    {
+      "position": 275,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1455
+    },
+    {
+      "position": 326,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1453
+    },
+    {
+      "position": 291,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1450
+    },
+    {
+      "position": 279,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 1450
+    },
+    {
+      "position": 319,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1436
+    },
+    {
+      "position": 276,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1425
+    },
+    {
+      "position": 287,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 1416
+    },
+    {
+      "position": 285,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1411
+    },
+    {
+      "position": 289,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 1408
+    },
+    {
+      "position": 291,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 1396
+    },
+    {
+      "position": 289,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1395
+    },
+    {
+      "position": 274,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1394
+    },
+    {
+      "position": 326,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1384
+    },
+    {
+      "position": 286,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1379
+    },
+    {
+      "position": 298,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1379
+    },
+    {
+      "position": 273,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1378
+    },
+    {
+      "position": 279,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 1374
+    },
+    {
+      "position": 280,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1354
+    },
+    {
+      "position": 273,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 1352
+    },
+    {
+      "position": 276,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1346
+    },
+    {
+      "position": 279,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1309
+    },
+    {
+      "position": 273,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 1303
+    },
+    {
+      "position": 282,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 1298
+    },
+    {
+      "position": 283,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 1292
+    },
+    {
+      "position": 280,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 1283
+    },
+    {
+      "position": 278,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1282
+    },
+    {
+      "position": 280,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1277
+    },
+    {
+      "position": 281,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 1270
+    },
+    {
+      "position": 320,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1270
+    },
+    {
+      "position": 271,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1269
+    },
+    {
+      "position": 274,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1258
+    },
+    {
+      "position": 275,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 1257
+    },
+    {
+      "position": 281,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 1252
+    },
+    {
+      "position": 276,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1237
+    },
+    {
+      "position": 281,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1215
+    },
+    {
+      "position": 272,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1197
+    },
+    {
+      "position": 283,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 1191
+    },
+    {
+      "position": 275,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1190
+    },
+    {
+      "position": 303,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1186
+    },
+    {
+      "position": 280,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1178
+    },
+    {
+      "position": 279,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 1176
+    },
+    {
+      "position": 295,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 1174
+    },
+    {
+      "position": 279,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1146
+    },
+    {
+      "position": 285,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1145
+    },
+    {
+      "position": 279,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1137
+    },
+    {
+      "position": 273,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 1135
+    },
+    {
+      "position": 284,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 1134
+    },
+    {
+      "position": 289,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 1125
+    },
+    {
+      "position": 273,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 1119
+    },
+    {
+      "position": 278,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1115
+    },
+    {
+      "position": 279,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1108
+    },
+    {
+      "position": 285,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 1105
+    },
+    {
+      "position": 281,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1105
+    },
+    {
+      "position": 277,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1102
+    },
+    {
+      "position": 283,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1102
+    },
+    {
+      "position": 272,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1098
+    },
+    {
+      "position": 278,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1087
+    },
+    {
+      "position": 278,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 1067
+    },
+    {
+      "position": 274,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 1065
+    },
+    {
+      "position": 278,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 1063
+    },
+    {
+      "position": 291,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1059
+    },
+    {
+      "position": 283,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 1058
+    },
+    {
+      "position": 273,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1052
+    },
+    {
+      "position": 307,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1050
+    },
+    {
+      "position": 300,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 1049
+    },
+    {
+      "position": 281,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 1047
+    },
+    {
+      "position": 282,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1044
+    },
+    {
+      "position": 278,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1039
+    },
+    {
+      "position": 285,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1039
+    },
+    {
+      "position": 279,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 1038
+    },
+    {
+      "position": 284,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1029
+    },
+    {
+      "position": 280,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 1021
+    },
+    {
+      "position": 296,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1017
+    },
+    {
+      "position": 305,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 1016
+    },
+    {
+      "position": 278,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1014
+    },
+    {
+      "position": 286,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1004
+    },
+    {
+      "position": 279,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 1004
+    },
+    {
+      "position": 274,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 1001
+    },
+    {
+      "position": 314,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1000
+    },
+    {
+      "position": 293,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 996
+    },
+    {
+      "position": 283,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 996
+    },
+    {
+      "position": 276,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 991
+    },
+    {
+      "position": 283,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 986
+    },
+    {
+      "position": 274,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 985
+    },
+    {
+      "position": 279,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 984
+    },
+    {
+      "position": 301,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 981
+    },
+    {
+      "position": 276,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 971
+    },
+    {
+      "position": 286,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 969
+    },
+    {
+      "position": 277,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 962
+    },
+    {
+      "position": 273,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 957
+    },
+    {
+      "position": 274,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 957
+    },
+    {
+      "position": 281,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 954
+    },
+    {
+      "position": 273,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 950
+    },
+    {
+      "position": 274,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 932
+    },
+    {
+      "position": 273,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 926
+    },
+    {
+      "position": 281,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 924
+    },
+    {
+      "position": 291,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 921
+    },
+    {
+      "position": 278,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 914
+    },
+    {
+      "position": 281,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 910
+    },
+    {
+      "position": 280,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 903
+    },
+    {
+      "position": 288,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 903
+    },
+    {
+      "position": 278,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 900
+    },
+    {
+      "position": 303,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 897
+    },
+    {
+      "position": 274,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 893
+    },
+    {
+      "position": 281,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 891
+    },
+    {
+      "position": 277,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 888
+    },
+    {
+      "position": 281,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 885
+    },
+    {
+      "position": 275,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 884
+    },
+    {
+      "position": 275,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 877
+    },
+    {
+      "position": 308,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 877
+    },
+    {
+      "position": 292,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 869
+    },
+    {
+      "position": 315,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 860
+    },
+    {
+      "position": 273,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 854
+    },
+    {
+      "position": 281,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 852
+    },
+    {
+      "position": 279,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 850
+    },
+    {
+      "position": 273,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 850
+    },
+    {
+      "position": 275,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 849
+    },
+    {
+      "position": 274,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 844
+    },
+    {
+      "position": 272,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 827
+    },
+    {
+      "position": 279,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 826
+    },
+    {
+      "position": 277,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 824
+    },
+    {
+      "position": 277,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 823
+    },
+    {
+      "position": 281,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 822
+    },
+    {
+      "position": 280,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 817
+    },
+    {
+      "position": 277,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 816
+    },
+    {
+      "position": 288,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 814
+    },
+    {
+      "position": 283,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 813
+    },
+    {
+      "position": 275,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 802
+    },
+    {
+      "position": 274,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 802
+    },
+    {
+      "position": 288,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 798
+    },
+    {
+      "position": 284,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 796
+    },
+    {
+      "position": 272,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 794
+    },
+    {
+      "position": 285,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 794
+    },
+    {
+      "position": 278,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 793
+    },
+    {
+      "position": 283,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 790
+    },
+    {
+      "position": 282,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 782
+    },
+    {
+      "position": 271,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 782
+    },
+    {
+      "position": 284,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 781
+    },
+    {
+      "position": 276,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 781
+    },
+    {
+      "position": 284,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 780
+    },
+    {
+      "position": 273,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 777
+    },
+    {
+      "position": 278,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 774
+    },
+    {
+      "position": 280,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 773
+    },
+    {
+      "position": 317,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 771
+    },
+    {
+      "position": 271,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 769
+    },
+    {
+      "position": 281,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 769
+    },
+    {
+      "position": 281,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 760
+    },
+    {
+      "position": 271,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 759
+    },
+    {
+      "position": 276,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 759
+    },
+    {
+      "position": 276,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 758
+    },
+    {
+      "position": 274,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 752
+    },
+    {
+      "position": 302,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 752
+    },
+    {
+      "position": 282,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 751
+    },
+    {
+      "position": 281,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 749
+    },
+    {
+      "position": 289,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 748
+    },
+    {
+      "position": 284,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 744
+    },
+    {
+      "position": 295,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 743
+    },
+    {
+      "position": 272,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 743
+    },
+    {
+      "position": 273,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 737
+    },
+    {
+      "position": 285,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 732
+    },
+    {
+      "position": 277,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 729
+    },
+    {
+      "position": 273,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 724
+    },
+    {
+      "position": 282,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 721
+    },
+    {
+      "position": 280,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 717
+    },
+    {
+      "position": 285,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 709
+    },
+    {
+      "position": 281,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 702
+    },
+    {
+      "position": 288,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 702
+    },
+    {
+      "position": 276,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 700
+    },
+    {
+      "position": 277,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 695
+    },
+    {
+      "position": 324,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 684
+    },
+    {
+      "position": 271,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 682
+    },
+    {
+      "position": 274,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 681
+    },
+    {
+      "position": 289,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 678
+    },
+    {
+      "position": 285,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 676
+    },
+    {
+      "position": 313,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 674
+    },
+    {
+      "position": 285,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 674
+    },
+    {
+      "position": 286,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 673
+    },
+    {
+      "position": 304,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 660
+    },
+    {
+      "position": 275,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 659
+    },
+    {
+      "position": 287,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 659
+    },
+    {
+      "position": 289,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 657
+    },
+    {
+      "position": 323,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 656
+    },
+    {
+      "position": 284,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 650
+    },
+    {
+      "position": 273,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 642
+    },
+    {
+      "position": 288,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 641
+    },
+    {
+      "position": 279,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 639
+    },
+    {
+      "position": 285,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 626
+    },
+    {
+      "position": 285,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 623
+    },
+    {
+      "position": 282,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 618
+    },
+    {
+      "position": 288,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 615
+    },
+    {
+      "position": 284,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 614
+    },
+    {
+      "position": 295,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 612
+    },
+    {
+      "position": 275,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 612
+    },
+    {
+      "position": 276,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 611
+    },
+    {
+      "position": 289,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 609
+    },
+    {
+      "position": 275,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 608
+    },
+    {
+      "position": 282,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 608
+    },
+    {
+      "position": 285,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 607
+    },
+    {
+      "position": 276,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 605
+    },
+    {
+      "position": 270,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 605
+    },
+    {
+      "position": 276,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 601
+    },
+    {
+      "position": 276,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 601
+    },
+    {
+      "position": 287,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 598
+    },
+    {
+      "position": 279,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 591
+    },
+    {
+      "position": 275,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 587
+    },
+    {
+      "position": 328,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 584
+    },
+    {
+      "position": 283,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 582
+    },
+    {
+      "position": 285,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 582
+    },
+    {
+      "position": 282,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 580
+    },
+    {
+      "position": 280,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 580
+    },
+    {
+      "position": 283,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 579
+    },
+    {
+      "position": 272,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 579
+    },
+    {
+      "position": 291,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 576
+    },
+    {
+      "position": 272,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 573
+    },
+    {
+      "position": 301,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 571
+    },
+    {
+      "position": 279,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 569
+    },
+    {
+      "position": 282,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 565
+    },
+    {
+      "position": 288,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 565
+    },
+    {
+      "position": 286,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 563
+    },
+    {
+      "position": 277,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 560
+    },
+    {
+      "position": 289,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 560
+    },
+    {
+      "position": 281,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 558
+    },
+    {
+      "position": 281,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 558
+    },
+    {
+      "position": 291,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 553
+    },
+    {
+      "position": 285,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 552
+    },
+    {
+      "position": 283,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 551
+    },
+    {
+      "position": 307,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 545
+    },
+    {
+      "position": 299,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 542
+    },
+    {
+      "position": 279,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 539
+    },
+    {
+      "position": 290,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 539
+    },
+    {
+      "position": 278,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 539
+    },
+    {
+      "position": 289,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 538
+    },
+    {
+      "position": 300,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 531
+    },
+    {
+      "position": 274,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 527
+    },
+    {
+      "position": 282,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 522
+    },
+    {
+      "position": 291,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 522
+    },
+    {
+      "position": 288,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 519
+    },
+    {
+      "position": 277,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 518
+    },
+    {
+      "position": 275,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 518
+    },
+    {
+      "position": 284,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 518
+    },
+    {
+      "position": 289,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 517
+    },
+    {
+      "position": 289,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 514
+    },
+    {
+      "position": 306,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 514
+    },
+    {
+      "position": 298,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 509
+    },
+    {
+      "position": 284,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 509
+    },
+    {
+      "position": 275,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 509
+    },
+    {
+      "position": 280,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 506
+    },
+    {
+      "position": 275,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 506
+    },
+    {
+      "position": 278,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 503
+    },
+    {
+      "position": 275,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 501
+    },
+    {
+      "position": 300,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 500
+    },
+    {
+      "position": 280,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 499
+    },
+    {
+      "position": 276,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 498
+    },
+    {
+      "position": 297,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 498
+    },
+    {
+      "position": 288,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 496
+    },
+    {
+      "position": 280,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 495
+    },
+    {
+      "position": 325,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 491
+    },
+    {
+      "position": 275,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 491
+    },
+    {
+      "position": 276,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 490
+    },
+    {
+      "position": 271,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 490
+    },
+    {
+      "position": 289,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 488
+    },
+    {
+      "position": 284,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 486
+    },
+    {
+      "position": 279,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 485
+    },
+    {
+      "position": 271,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 485
+    },
+    {
+      "position": 271,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 484
+    },
+    {
+      "position": 326,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 483
+    },
+    {
+      "position": 298,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 480
+    },
+    {
+      "position": 286,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 476
+    },
+    {
+      "position": 284,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 471
+    },
+    {
+      "position": 273,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 471
+    },
+    {
+      "position": 280,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 469
+    },
+    {
+      "position": 291,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 469
+    },
+    {
+      "position": 279,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 467
+    },
+    {
+      "position": 272,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 466
+    },
+    {
+      "position": 287,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 460
+    },
+    {
+      "position": 272,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 459
+    },
+    {
+      "position": 284,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 459
+    },
+    {
+      "position": 288,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 456
+    },
+    {
+      "position": 283,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 453
+    },
+    {
+      "position": 282,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 450
+    },
+    {
+      "position": 271,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 445
+    },
+    {
+      "position": 320,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 444
+    },
+    {
+      "position": 279,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 443
+    },
+    {
+      "position": 284,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 440
+    },
+    {
+      "position": 293,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 435
+    },
+    {
+      "position": 282,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 433
+    },
+    {
+      "position": 290,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 430
+    },
+    {
+      "position": 303,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 430
+    },
+    {
+      "position": 278,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 429
+    },
+    {
+      "position": 284,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 427
+    },
+    {
+      "position": 289,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 427
+    },
+    {
+      "position": 287,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 423
+    },
+    {
+      "position": 282,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 422
+    },
+    {
+      "position": 271,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 421
+    },
+    {
+      "position": 274,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 420
+    },
+    {
+      "position": 286,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 420
+    },
+    {
+      "position": 284,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 420
+    },
+    {
+      "position": 290,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 419
+    },
+    {
+      "position": 276,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 416
+    },
+    {
+      "position": 299,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 414
+    },
+    {
+      "position": 290,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 411
+    },
+    {
+      "position": 286,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 411
+    },
+    {
+      "position": 290,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 410
+    },
+    {
+      "position": 290,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 405
+    },
+    {
+      "position": 275,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 405
+    },
+    {
+      "position": 276,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 404
+    },
+    {
+      "position": 288,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 404
+    },
+    {
+      "position": 275,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 398
+    },
+    {
+      "position": 303,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 397
+    },
+    {
+      "position": 272,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 396
+    },
+    {
+      "position": 287,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 395
+    },
+    {
+      "position": 281,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 394
+    },
+    {
+      "position": 272,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 394
+    },
+    {
+      "position": 299,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 393
+    },
+    {
+      "position": 272,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 393
+    },
+    {
+      "position": 300,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 392
+    },
+    {
+      "position": 282,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 392
+    },
+    {
+      "position": 305,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 391
+    },
+    {
+      "position": 291,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 389
+    },
+    {
+      "position": 278,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 386
+    },
+    {
+      "position": 281,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 385
+    },
+    {
+      "position": 294,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 383
+    },
+    {
+      "position": 272,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 382
+    },
+    {
+      "position": 272,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 382
+    },
+    {
+      "position": 287,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 381
+    },
+    {
+      "position": 291,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 379
+    },
+    {
+      "position": 271,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 378
+    },
+    {
+      "position": 277,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 377
+    },
+    {
+      "position": 279,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 377
+    },
+    {
+      "position": 285,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 374
+    },
+    {
+      "position": 269,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 372
+    },
+    {
+      "position": 277,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 366
+    },
+    {
+      "position": 277,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 363
+    },
+    {
+      "position": 287,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 362
+    },
+    {
+      "position": 279,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 361
+    },
+    {
+      "position": 286,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 359
+    },
+    {
+      "position": 282,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 356
+    },
+    {
+      "position": 277,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 355
+    },
+    {
+      "position": 283,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 354
+    },
+    {
+      "position": 286,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 354
+    },
+    {
+      "position": 274,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 353
+    },
+    {
+      "position": 291,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 352
+    },
+    {
+      "position": 326,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 350
+    },
+    {
+      "position": 271,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 349
+    },
+    {
+      "position": 287,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 347
+    },
+    {
+      "position": 290,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 345
+    },
+    {
+      "position": 325,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 344
+    },
+    {
+      "position": 281,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 343
+    },
+    {
+      "position": 290,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 339
+    },
+    {
+      "position": 277,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 338
+    },
+    {
+      "position": 286,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 337
+    },
+    {
+      "position": 291,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 335
+    },
+    {
+      "position": 288,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 333
+    },
+    {
+      "position": 281,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 332
+    },
+    {
+      "position": 271,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 330
+    },
+    {
+      "position": 287,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 330
+    },
+    {
+      "position": 272,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 327
+    },
+    {
+      "position": 278,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 326
+    },
+    {
+      "position": 290,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 323
+    },
+    {
+      "position": 286,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 322
+    },
+    {
+      "position": 289,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 322
+    },
+    {
+      "position": 272,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 320
+    },
+    {
+      "position": 271,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 319
+    },
+    {
+      "position": 286,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 319
+    },
+    {
+      "position": 280,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 313
+    },
+    {
+      "position": 290,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 312
+    },
+    {
+      "position": 286,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 311
+    },
+    {
+      "position": 288,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 311
+    },
+    {
+      "position": 283,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 309
+    },
+    {
+      "position": 282,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 309
+    },
+    {
+      "position": 272,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 307
+    },
+    {
+      "position": 283,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 305
+    },
+    {
+      "position": 290,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 304
+    },
+    {
+      "position": 277,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 303
+    },
+    {
+      "position": 290,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 302
+    },
+    {
+      "position": 271,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 301
+    },
+    {
+      "position": 282,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 296
+    },
+    {
+      "position": 309,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 295
+    },
+    {
+      "position": 271,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 294
+    },
+    {
+      "position": 285,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 293
+    },
+    {
+      "position": 309,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 292
+    },
+    {
+      "position": 289,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 292
+    },
+    {
+      "position": 270,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 291
+    },
+    {
+      "position": 287,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 291
+    },
+    {
+      "position": 289,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 291
+    },
+    {
+      "position": 286,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 290
+    },
+    {
+      "position": 289,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 287
+    },
+    {
+      "position": 277,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 282
+    },
+    {
+      "position": 281,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 281
+    },
+    {
+      "position": 287,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 281
+    },
+    {
+      "position": 280,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 278
+    },
+    {
+      "position": 277,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 275
+    },
+    {
+      "position": 288,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 275
+    },
+    {
+      "position": 275,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 273
+    },
+    {
+      "position": 282,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 270
+    },
+    {
+      "position": 286,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 266
+    },
+    {
+      "position": 288,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 266
+    },
+    {
+      "position": 280,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 265
+    },
+    {
+      "position": 271,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 262
+    },
+    {
+      "position": 290,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 261
+    },
+    {
+      "position": 289,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 261
+    },
+    {
+      "position": 291,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 258
+    },
+    {
+      "position": 284,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 258
+    },
+    {
+      "position": 272,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 257
+    },
+    {
+      "position": 291,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 255
+    },
+    {
+      "position": 277,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 255
+    },
+    {
+      "position": 290,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 255
+    },
+    {
+      "position": 288,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 254
+    },
+    {
+      "position": 271,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 253
+    },
+    {
+      "position": 322,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 251
+    },
+    {
+      "position": 291,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 249
+    },
+    {
+      "position": 288,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 249
+    },
+    {
+      "position": 277,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 249
+    },
+    {
+      "position": 287,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 247
+    },
+    {
+      "position": 276,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 246
+    },
+    {
+      "position": 289,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 243
+    },
+    {
+      "position": 280,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 242
+    },
+    {
+      "position": 271,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 241
+    },
+    {
+      "position": 289,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 239
+    },
+    {
+      "position": 276,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 238
+    },
+    {
+      "position": 284,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 237
+    },
+    {
+      "position": 271,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 236
+    },
+    {
+      "position": 277,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 235
+    },
+    {
+      "position": 290,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 235
+    },
+    {
+      "position": 322,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 233
+    },
+    {
+      "position": 305,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 228
+    },
+    {
+      "position": 288,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 227
+    },
+    {
+      "position": 283,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 226
+    },
+    {
+      "position": 283,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 226
+    },
+    {
+      "position": 287,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 225
+    },
+    {
+      "position": 284,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 225
+    },
+    {
+      "position": 282,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 223
+    },
+    {
+      "position": 282,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 222
+    },
+    {
+      "position": 277,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 220
+    },
+    {
+      "position": 290,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 220
+    },
+    {
+      "position": 284,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 220
+    },
+    {
+      "position": 291,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 218
+    },
+    {
+      "position": 291,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 218
+    },
+    {
+      "position": 291,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 217
+    },
+    {
+      "position": 296,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 215
+    },
+    {
+      "position": 285,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 213
+    },
+    {
+      "position": 285,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 212
+    },
+    {
+      "position": 283,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 211
+    },
+    {
+      "position": 289,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 210
+    },
+    {
+      "position": 286,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 209
+    },
+    {
+      "position": 295,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 209
+    },
+    {
+      "position": 286,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 209
+    },
+    {
+      "position": 284,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 207
+    },
+    {
+      "position": 282,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 207
+    },
+    {
+      "position": 276,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 206
+    },
+    {
+      "position": 272,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 205
+    },
+    {
+      "position": 284,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 204
+    },
+    {
+      "position": 271,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 199
+    },
+    {
+      "position": 298,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 191
+    },
+    {
+      "position": 276,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 190
+    },
+    {
+      "position": 285,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 188
+    },
+    {
+      "position": 282,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 183
+    },
+    {
+      "position": 287,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 181
+    },
+    {
+      "position": 282,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 181
+    },
+    {
+      "position": 286,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 181
+    },
+    {
+      "position": 287,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 179
+    },
+    {
+      "position": 291,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 179
+    },
+    {
+      "position": 280,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 179
+    },
+    {
+      "position": 324,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 178
+    },
+    {
+      "position": 281,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 176
+    },
+    {
+      "position": 288,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 176
+    },
+    {
+      "position": 286,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 173
+    },
+    {
+      "position": 277,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 173
+    },
+    {
+      "position": 271,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 172
+    },
+    {
+      "position": 271,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 169
+    },
+    {
+      "position": 283,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 168
+    },
+    {
+      "position": 286,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 165
+    },
+    {
+      "position": 287,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 163
+    },
+    {
+      "position": 281,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 160
+    },
+    {
+      "position": 282,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 159
+    },
+    {
+      "position": 284,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 158
+    },
+    {
+      "position": 286,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 157
+    },
+    {
+      "position": 287,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 156
+    },
+    {
+      "position": 301,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 155
+    },
+    {
+      "position": 288,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 153
+    },
+    {
+      "position": 281,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 153
+    },
+    {
+      "position": 283,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 151
+    },
+    {
+      "position": 287,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 147
+    },
+    {
+      "position": 318,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 145
+    },
+    {
+      "position": 277,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 141
+    },
+    {
+      "position": 286,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 141
+    },
+    {
+      "position": 317,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 139
+    },
+    {
+      "position": 277,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 137
+    },
+    {
+      "position": 282,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 133
+    },
+    {
+      "position": 272,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 132
+    },
+    {
+      "position": 280,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 130
+    },
+    {
+      "position": 282,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 128
+    },
+    {
+      "position": 281,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 127
+    },
+    {
+      "position": 288,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 126
+    },
+    {
+      "position": 329,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 125
+    },
+    {
+      "position": 272,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 125
+    },
+    {
+      "position": 275,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 125
+    },
+    {
+      "position": 282,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 119
+    },
+    {
+      "position": 288,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 116
+    },
+    {
+      "position": 288,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 115
+    },
+    {
+      "position": 291,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 112
+    },
+    {
+      "position": 280,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 108
+    },
+    {
+      "position": 287,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 107
+    },
+    {
+      "position": 285,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 103
+    },
+    {
+      "position": 317,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 103
+    },
+    {
+      "position": 284,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 102
+    },
+    {
+      "position": 309,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 102
+    },
+    {
+      "position": 286,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 101
+    },
+    {
+      "position": 278,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 100
+    },
+    {
+      "position": 286,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 100
+    },
+    {
+      "position": 291,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 98
+    },
+    {
+      "position": 267,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 98
+    },
+    {
+      "position": 287,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 97
+    },
+    {
+      "position": 291,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 96
+    },
+    {
+      "position": 281,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 95
+    },
+    {
+      "position": 277,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 94
+    },
+    {
+      "position": 287,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 91
+    },
+    {
+      "position": 277,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 91
+    },
+    {
+      "position": 291,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 88
+    },
+    {
+      "position": 270,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 85
+    },
+    {
+      "position": 284,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 83
+    },
+    {
+      "position": 272,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 82
+    },
+    {
+      "position": 290,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 81
+    },
+    {
+      "position": 296,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 81
+    },
+    {
+      "position": 291,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 80
+    },
+    {
+      "position": 291,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 78
+    },
+    {
+      "position": 287,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 76
+    },
+    {
+      "position": 291,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 75
+    },
+    {
+      "position": 272,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 75
+    },
+    {
+      "position": 307,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 74
+    },
+    {
+      "position": 305,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 73
+    },
+    {
+      "position": 280,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 72
+    },
+    {
+      "position": 271,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 72
+    },
+    {
+      "position": 289,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 71
+    },
+    {
+      "position": 318,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 69
+    },
+    {
+      "position": 291,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 69
+    },
+    {
+      "position": 291,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 68
+    },
+    {
+      "position": 271,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 67
+    },
+    {
+      "position": 290,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 66
+    },
+    {
+      "position": 325,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 65
+    },
+    {
+      "position": 272,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 63
+    },
+    {
+      "position": 307,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 62
+    },
+    {
+      "position": 293,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 58
+    },
+    {
+      "position": 282,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 57
+    },
+    {
+      "position": 308,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 56
+    },
+    {
+      "position": 284,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 53
+    },
+    {
+      "position": 272,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 51
+    },
+    {
+      "position": 318,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 49
+    },
+    {
+      "position": 289,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 49
+    },
+    {
+      "position": 290,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 45
+    },
+    {
+      "position": 328,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 45
+    },
+    {
+      "position": 267,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 44
+    },
+    {
+      "position": 291,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 44
+    },
+    {
+      "position": 282,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 44
+    },
+    {
+      "position": 317,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 41
+    },
+    {
+      "position": 290,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 41
+    },
+    {
+      "position": 308,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 41
+    },
+    {
+      "position": 310,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 39
+    },
+    {
+      "position": 301,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 38
+    },
+    {
+      "position": 293,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 38
+    },
+    {
+      "position": 307,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 37
+    },
+    {
+      "position": 277,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 37
+    },
+    {
+      "position": 290,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 36
+    },
+    {
+      "position": 290,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 36
+    },
+    {
+      "position": 325,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 35
+    },
+    {
+      "position": 284,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 35
+    },
+    {
+      "position": 291,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 34
+    },
+    {
+      "position": 326,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 34
+    },
+    {
+      "position": 282,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 33
+    },
+    {
+      "position": 283,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 33
+    },
+    {
+      "position": 277,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 33
+    },
+    {
+      "position": 291,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 32
+    },
+    {
+      "position": 325,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 32
+    },
+    {
+      "position": 288,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 32
+    },
+    {
+      "position": 329,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 31
+    },
+    {
+      "position": 293,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 30
+    },
+    {
+      "position": 325,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 30
+    },
+    {
+      "position": 310,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 29
+    },
+    {
+      "position": 290,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 29
+    },
+    {
+      "position": 308,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 29
+    },
+    {
+      "position": 293,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 27
+    },
+    {
+      "position": 295,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 27
+    },
+    {
+      "position": 327,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 26
+    },
+    {
+      "position": 310,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 25
+    },
+    {
+      "position": 325,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 25
+    },
+    {
+      "position": 319,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 21
+    },
+    {
+      "position": 272,
+      "codon": "GTG",
+      "aa": "V",
+      "count": 21
+    },
+    {
+      "position": 315,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 21
+    },
+    {
+      "position": 329,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 19
+    },
+    {
+      "position": 310,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 19
+    },
+    {
+      "position": 322,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 16
+    },
+    {
+      "position": 320,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 15
+    },
+    {
+      "position": 323,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 15
+    },
+    {
+      "position": 294,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 14
+    },
+    {
+      "position": 307,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 14
+    },
+    {
+      "position": 299,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 14
+    },
+    {
+      "position": 329,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 14
+    },
+    {
+      "position": 328,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 13
+    },
+    {
+      "position": 290,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 13
+    },
+    {
+      "position": 316,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 13
+    },
+    {
+      "position": 315,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 13
+    },
+    {
+      "position": 328,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 11
+    },
+    {
+      "position": 317,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 11
+    },
+    {
+      "position": 326,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 11
+    },
+    {
+      "position": 326,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 10
+    },
+    {
+      "position": 272,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 10
+    },
+    {
+      "position": 322,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 10
+    },
+    {
+      "position": 327,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 10
+    },
+    {
+      "position": 267,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 10
+    },
+    {
+      "position": 324,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 9
+    },
+    {
+      "position": 323,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 9
+    },
+    {
+      "position": 314,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 9
+    },
+    {
+      "position": 297,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 9
+    },
+    {
+      "position": 313,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 8
+    },
+    {
+      "position": 296,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 8
+    },
+    {
+      "position": 315,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 8
+    },
+    {
+      "position": 327,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 8
+    },
+    {
+      "position": 319,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 8
+    },
+    {
+      "position": 328,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 7
+    },
+    {
+      "position": 268,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 7
+    },
+    {
+      "position": 310,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 7
+    },
+    {
+      "position": 320,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 6
+    },
+    {
+      "position": 287,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 6
+    },
+    {
+      "position": 319,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 6
+    },
+    {
+      "position": 288,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 6
+    },
+    {
+      "position": 328,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 6
+    },
+    {
+      "position": 321,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 6
+    },
+    {
+      "position": 325,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 5
+    },
+    {
+      "position": 304,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 5
+    },
+    {
+      "position": 319,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 5
+    },
+    {
+      "position": 321,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 5
+    },
+    {
+      "position": 314,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 5
+    },
+    {
+      "position": 296,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 5
+    },
+    {
+      "position": 268,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 4
+    },
+    {
+      "position": 327,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 4
+    },
+    {
+      "position": 329,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 4
+    },
+    {
+      "position": 317,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 4
+    },
+    {
+      "position": 328,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 4
+    },
+    {
+      "position": 269,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 4
+    },
+    {
+      "position": 292,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 4
+    },
+    {
+      "position": 327,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 4
+    },
+    {
+      "position": 270,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 4
+    },
+    {
+      "position": 295,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 4
+    },
+    {
+      "position": 298,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 4
+    },
+    {
+      "position": 329,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 4
+    },
+    {
+      "position": 299,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 4
+    },
+    {
+      "position": 299,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 3
+    },
+    {
+      "position": 308,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 3
+    },
+    {
+      "position": 311,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 3
+    },
+    {
+      "position": 309,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 3
+    },
+    {
+      "position": 280,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 3
+    },
+    {
+      "position": 311,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 3
+    },
+    {
+      "position": 318,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 3
+    },
+    {
+      "position": 325,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 3
+    },
+    {
+      "position": 329,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 3
+    },
+    {
+      "position": 317,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 3
+    },
+    {
+      "position": 328,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 3
+    },
+    {
+      "position": 311,
+      "codon": "AAC",
+      "aa": "N",
+      "count": 3
+    },
+    {
+      "position": 310,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 3
+    },
+    {
+      "position": 316,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 3
+    },
+    {
+      "position": 322,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 3
+    },
+    {
+      "position": 292,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 3
+    },
+    {
+      "position": 320,
+      "codon": "TGG",
+      "aa": "W",
+      "count": 2
+    },
+    {
+      "position": 313,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 2
+    },
+    {
+      "position": 295,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 2
+    },
+    {
+      "position": 303,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 2
+    },
+    {
+      "position": 270,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 2
+    },
+    {
+      "position": 328,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 2
+    },
+    {
+      "position": 314,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 2
+    },
+    {
+      "position": 313,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 2
+    },
+    {
+      "position": 319,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2
+    },
+    {
+      "position": 328,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 2
+    },
+    {
+      "position": 327,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 2
+    },
+    {
+      "position": 326,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 2
+    },
+    {
+      "position": 316,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 2
+    },
+    {
+      "position": 296,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 2
+    },
+    {
+      "position": 327,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 2
+    },
+    {
+      "position": 268,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 2
+    },
+    {
+      "position": 269,
+      "codon": "TAG",
+      "aa": "*",
+      "count": 2
+    },
+    {
+      "position": 298,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2
+    },
+    {
+      "position": 315,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 2
+    },
+    {
+      "position": 268,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 2
+    },
+    {
+      "position": 294,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 2
+    },
+    {
+      "position": 328,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 2
+    },
+    {
+      "position": 328,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 2
+    },
+    {
+      "position": 305,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 2
+    },
+    {
+      "position": 319,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 2
+    },
+    {
+      "position": 319,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 2
+    },
+    {
+      "position": 324,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 2
+    },
+    {
+      "position": 322,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 2
+    },
+    {
+      "position": 292,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 2
+    },
+    {
+      "position": 309,
+      "codon": "TTT",
+      "aa": "F",
+      "count": 2
+    },
+    {
+      "position": 272,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 2
+    },
+    {
+      "position": 300,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 2
+    },
+    {
+      "position": 272,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 2
+    },
+    {
+      "position": 301,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 2
+    },
+    {
+      "position": 269,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 2
+    },
+    {
+      "position": 327,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 2
+    },
+    {
+      "position": 267,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 2
+    },
+    {
+      "position": 312,
+      "codon": "AAG",
+      "aa": "K",
+      "count": 2
+    },
+    {
+      "position": 326,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 1
+    },
+    {
+      "position": 323,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 297,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 1
+    },
+    {
+      "position": 295,
+      "codon": "CGT",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 302,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 320,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 293,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 314,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 299,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1
+    },
+    {
+      "position": 267,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 1
+    },
+    {
+      "position": 298,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 1
+    },
+    {
+      "position": 306,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 1
+    },
+    {
+      "position": 310,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 269,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 1
+    },
+    {
+      "position": 304,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 1
+    },
+    {
+      "position": 287,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 1
+    },
+    {
+      "position": 296,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1
+    },
+    {
+      "position": 307,
+      "codon": "ACT",
+      "aa": "T",
+      "count": 1
+    },
+    {
+      "position": 320,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 1
+    },
+    {
+      "position": 267,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 312,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 314,
+      "codon": "AGT",
+      "aa": "S",
+      "count": 1
+    },
+    {
+      "position": 322,
+      "codon": "AAT",
+      "aa": "N",
+      "count": 1
+    },
+    {
+      "position": 309,
+      "codon": "GCG",
+      "aa": "A",
+      "count": 1
+    },
+    {
+      "position": 308,
+      "codon": "GCT",
+      "aa": "A",
+      "count": 1
+    },
+    {
+      "position": 304,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1
+    },
+    {
+      "position": 320,
+      "codon": "TCG",
+      "aa": "S",
+      "count": 1
+    },
+    {
+      "position": 329,
+      "codon": "TCT",
+      "aa": "S",
+      "count": 1
+    },
+    {
+      "position": 317,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1
+    },
+    {
+      "position": 307,
+      "codon": "GAT",
+      "aa": "D",
+      "count": 1
+    },
+    {
+      "position": 311,
+      "codon": "GGC",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 319,
+      "codon": "CTT",
+      "aa": "L",
+      "count": 1
+    },
+    {
+      "position": 315,
+      "codon": "TTG",
+      "aa": "L",
+      "count": 1
+    },
+    {
+      "position": 328,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 294,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 307,
+      "codon": "AGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 325,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 325,
+      "codon": "ACG",
+      "aa": "T",
+      "count": 1
+    },
+    {
+      "position": 312,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 297,
+      "codon": "GGT",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 326,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 1
+    },
+    {
+      "position": 311,
+      "codon": "ACC",
+      "aa": "T",
+      "count": 1
+    },
+    {
+      "position": 267,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 1
+    },
+    {
+      "position": 324,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1
+    },
+    {
+      "position": 300,
+      "codon": "TAT",
+      "aa": "Y",
+      "count": 1
+    },
+    {
+      "position": 324,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 293,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 311,
+      "codon": "ATG",
+      "aa": "M",
+      "count": 1
+    },
+    {
+      "position": 327,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1
+    },
+    {
+      "position": 321,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 302,
+      "codon": "CCT",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 293,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 1
+    },
+    {
+      "position": 296,
+      "codon": "CGG",
+      "aa": "R",
+      "count": 1
+    },
+    {
+      "position": 300,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 317,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1
+    },
+    {
+      "position": 313,
+      "codon": "GGG",
+      "aa": "G",
+      "count": 1
+    },
+    {
+      "position": 324,
+      "codon": "CAG",
+      "aa": "Q",
+      "count": 1
+    },
+    {
+      "position": 270,
+      "codon": "CCG",
+      "aa": "P",
+      "count": 1
+    },
+    {
+      "position": 321,
+      "codon": "GAG",
+      "aa": "E",
+      "count": 1
+    },
+    {
+      "position": 310,
+      "codon": "CTG",
+      "aa": "L",
+      "count": 1
+    },
+    {
+      "position": 317,
+      "codon": "CAT",
+      "aa": "H",
+      "count": 1
+    },
+    {
+      "position": 312,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1
+    },
+    {
+      "position": 268,
+      "codon": "GTT",
+      "aa": "V",
+      "count": 1
+    },
+    {
+      "position": 302,
+      "codon": "ATT",
+      "aa": "I",
+      "count": 1
+    },
+    {
+      "position": 310,
+      "codon": "TGT",
+      "aa": "C",
+      "count": 1
+    }
+  ],
+  "length_top": [
+    [
+      211,
+      156133994
+    ],
+    [
+      210,
+      6608972
+    ],
+    [
+      212,
+      740676
+    ],
+    [
+      209,
+      696996
+    ],
+    [
+      208,
+      141959
+    ],
+    [
+      207,
+      38616
+    ],
+    [
+      206,
+      15683
+    ],
+    [
+      205,
+      7799
+    ]
+  ]
+}

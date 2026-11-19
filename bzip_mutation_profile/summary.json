@@ -1,0 +1,567 @@
+{
+  "pairs": 176134252,
+  "classes": {
+    "exact_wt": 134960263,
+    "extra_edit": 18266086,
+    "exact_designed": 9072471,
+    "ambiguous": 13057828,
+    "unmapped": 777604
+  },
+  "exact_total": 144032734,
+  "mutation_rate_mean": 0.0009998246384080732,
+  "mutation_rate_cv": 2.6743854412754406,
+  "mutation_rate_min": 1.577419199721641e-05,
+  "mutation_rate_max": 0.01613132609147029,
+  "flank_mismatch_bases": 2738915,
+  "designed_mismatch_bases": 20839193,
+  "extra_edit_pairs_with_md": 9326855,
+  "extra_nm": {
+    "1": 6670395,
+    "2": 1242115,
+    "3": 473924,
+    "4": 253987,
+    "5": 164050,
+    "6": 112091,
+    "7": 81202,
+    "8": 60385,
+    "9": 45608,
+    "10": 35399,
+    "11": 27611,
+    "12": 22048,
+    "13": 17414,
+    "14": 14147,
+    "15": 11811,
+    "16": 9718,
+    "17": 8373,
+    "18": 7128,
+    "19": 6579,
+    "20": 5926,
+    "21": 5575,
+    "22": 5178,
+    "23": 4941,
+    "24": 4564,
+    "25": 4333,
+    "26": 4033,
+    "27": 3664,
+    "28": 3424,
+    "29": 3087,
+    "30": 2692,
+    "31": 2446,
+    "32": 2177,
+    "33": 1790,
+    "34": 1584,
+    "35": 1334,
+    "36": 1108,
+    "37": 908,
+    "38": 712,
+    "39": 536,
+    "40": 368,
+    "41": 326,
+    "42": 298,
+    "43": 237,
+    "44": 201,
+    "45": 164,
+    "46": 168,
+    "47": 150,
+    "48": 108,
+    "49": 99,
+    "50": 105,
+    "51": 65,
+    "52": 73,
+    "53": 71,
+    "54": 64,
+    "55": 50,
+    "56": 31,
+    "57": 46,
+    "58": 36,
+    "59": 38,
+    "60": 28,
+    "61": 19,
+    "62": 22,
+    "63": 13,
+    "64": 17,
+    "65": 14,
+    "66": 9,
+    "67": 7,
+    "68": 4,
+    "69": 8,
+    "70": 6,
+    "71": 5,
+    "72": 3,
+    "73": 1,
+    "74": 3,
+    "75": 1
+  },
+  "codon_280": {
+    "wt_codon": "GCG",
+    "wt_aa": "A",
+    "degeneracy": "NNK",
+    "amp_offset": 61,
+    "in_amplicon": true
+  },
+  "codon_282": {
+    "wt_codon": "ACC",
+    "wt_aa": "T",
+    "degeneracy": "NNK",
+    "amp_offset": 67,
+    "in_amplicon": true
+  },
+  "allele_280": [
+    {
+      "allele": "c280_TTT_F",
+      "codon": "TTT",
+      "aa": "F",
+      "pairs": 18677
+    },
+    {
+      "allele": "c280_GCT_A",
+      "codon": "GCT",
+      "aa": "A",
+      "pairs": 14196
+    },
+    {
+      "allele": "c280_TCG_S",
+      "codon": "TCG",
+      "aa": "S",
+      "pairs": 8086
+    },
+    {
+      "allele": "c280_GTG_V",
+      "codon": "GTG",
+      "aa": "V",
+      "pairs": 7763
+    },
+    {
+      "allele": "c280_GAG_E",
+      "codon": "GAG",
+      "aa": "E",
+      "pairs": 7106
+    },
+    {
+      "allele": "c280_GGG_G",
+      "codon": "GGG",
+      "aa": "G",
+      "pairs": 1863
+    },
+    {
+      "allele": "c280_ACG_T",
+      "codon": "ACG",
+      "aa": "T",
+      "pairs": 1651
+    },
+    {
+      "allele": "c280_CCG_P",
+      "codon": "CCG",
+      "aa": "P",
+      "pairs": 1522
+    },
+    {
+      "allele": "c280_GTT_V",
+      "codon": "GTT",
+      "aa": "V",
+      "pairs": 1276
+    },
+    {
+      "allele": "c280_TGT_C",
+      "codon": "TGT",
+      "aa": "C",
+      "pairs": 1230
+    },
+    {
+      "allele": "c280_TAG_*",
+      "codon": "TAG",
+      "aa": "*",
+      "pairs": 1203
+    },
+    {
+      "allele": "c280_TTG_L",
+      "codon": "TTG",
+      "aa": "L",
+      "pairs": 1108
+    },
+    {
+      "allele": "c280_GGT_G",
+      "codon": "GGT",
+      "aa": "G",
+      "pairs": 961
+    },
+    {
+      "allele": "c280_ATG_M",
+      "codon": "ATG",
+      "aa": "M",
+      "pairs": 862
+    },
+    {
+      "allele": "c280_CCT_P",
+      "codon": "CCT",
+      "aa": "P",
+      "pairs": 763
+    },
+    {
+      "allele": "c280_TGG_W",
+      "codon": "TGG",
+      "aa": "W",
+      "pairs": 735
+    },
+    {
+      "allele": "c280_GAT_D",
+      "codon": "GAT",
+      "aa": "D",
+      "pairs": 688
+    },
+    {
+      "allele": "c280_CAT_H",
+      "codon": "CAT",
+      "aa": "H",
+      "pairs": 485
+    },
+    {
+      "allele": "c280_AAG_K",
+      "codon": "AAG",
+      "aa": "K",
+      "pairs": 461
+    },
+    {
+      "allele": "c280_TCT_S",
+      "codon": "TCT",
+      "aa": "S",
+      "pairs": 442
+    },
+    {
+      "allele": "c280_AGG_R",
+      "codon": "AGG",
+      "aa": "R",
+      "pairs": 299
+    },
+    {
+      "allele": "c280_CTG_L",
+      "codon": "CTG",
+      "aa": "L",
+      "pairs": 264
+    },
+    {
+      "allele": "c280_AAT_N",
+      "codon": "AAT",
+      "aa": "N",
+      "pairs": 248
+    },
+    {
+      "allele": "c280_CAG_Q",
+      "codon": "CAG",
+      "aa": "Q",
+      "pairs": 229
+    },
+    {
+      "allele": "c280_AGT_S",
+      "codon": "AGT",
+      "aa": "S",
+      "pairs": 171
+    },
+    {
+      "allele": "c280_TAT_Y",
+      "codon": "TAT",
+      "aa": "Y",
+      "pairs": 126
+    },
+    {
+      "allele": "c280_ATT_I",
+      "codon": "ATT",
+      "aa": "I",
+      "pairs": 103
+    },
+    {
+      "allele": "c280_ACT_T",
+      "codon": "ACT",
+      "aa": "T",
+      "pairs": 64
+    },
+    {
+      "allele": "c280_CTT_L",
+      "codon": "CTT",
+      "aa": "L",
+      "pairs": 3
+    },
+    {
+      "allele": "c280_CGT_R",
+      "codon": "CGT",
+      "aa": "R",
+      "pairs": 2
+    },
+    {
+      "allele": "c280_CGG_R",
+      "codon": "CGG",
+      "aa": "R",
+      "pairs": 1
+    }
+  ],
+  "allele_282": [
+    {
+      "allele": "c282_ATT_I",
+      "codon": "ATT",
+      "aa": "I",
+      "pairs": 19512
+    },
+    {
+      "allele": "c282_ACT_T",
+      "codon": "ACT",
+      "aa": "T",
+      "pairs": 3206
+    },
+    {
+      "allele": "c282_TTT_F",
+      "codon": "TTT",
+      "aa": "F",
+      "pairs": 1202
+    },
+    {
+      "allele": "c282_ACG_T",
+      "codon": "ACG",
+      "aa": "T",
+      "pairs": 956
+    },
+    {
+      "allele": "c282_AGG_R",
+      "codon": "AGG",
+      "aa": "R",
+      "pairs": 739
+    },
+    {
+      "allele": "c282_GTG_V",
+      "codon": "GTG",
+      "aa": "V",
+      "pairs": 699
+    },
+    {
+      "allele": "c282_GAT_D",
+      "codon": "GAT",
+      "aa": "D",
+      "pairs": 676
+    },
+    {
+      "allele": "c282_TCG_S",
+      "codon": "TCG",
+      "aa": "S",
+      "pairs": 570
+    },
+    {
+      "allele": "c282_ATG_M",
+      "codon": "ATG",
+      "aa": "M",
+      "pairs": 541
+    },
+    {
+      "allele": "c282_TTG_L",
+      "codon": "TTG",
+      "aa": "L",
+      "pairs": 533
+    },
+    {
+      "allele": "c282_CCT_P",
+      "codon": "CCT",
+      "aa": "P",
+      "pairs": 519
+    },
+    {
+      "allele": "c282_TAG_*",
+      "codon": "TAG",
+      "aa": "*",
+      "pairs": 481
+    },
+    {
+      "allele": "c282_GGG_G",
+      "codon": "GGG",
+      "aa": "G",
+      "pairs": 426
+    },
+    {
+      "allele": "c282_CAG_Q",
+      "codon": "CAG",
+      "aa": "Q",
+      "pairs": 411
+    },
+    {
+      "allele": "c282_TAT_Y",
+      "codon": "TAT",
+      "aa": "Y",
+      "pairs": 394
+    },
+    {
+      "allele": "c282_CGG_R",
+      "codon": "CGG",
+      "aa": "R",
+      "pairs": 382
+    },
+    {
+      "allele": "c282_TGT_C",
+      "codon": "TGT",
+      "aa": "C",
+      "pairs": 314
+    },
+    {
+      "allele": "c282_CGT_R",
+      "codon": "CGT",
+      "aa": "R",
+      "pairs": 287
+    },
+    {
+      "allele": "c282_GTT_V",
+      "codon": "GTT",
+      "aa": "V",
+      "pairs": 275
+    },
+    {
+      "allele": "c282_AGT_S",
+      "codon": "AGT",
+      "aa": "S",
+      "pairs": 252
+    },
+    {
+      "allele": "c282_GGT_G",
+      "codon": "GGT",
+      "aa": "G",
+      "pairs": 207
+    },
+    {
+      "allele": "c282_AAT_N",
+      "codon": "AAT",
+      "aa": "N",
+      "pairs": 203
+    },
+    {
+      "allele": "c282_CTT_L",
+      "codon": "CTT",
+      "aa": "L",
+      "pairs": 192
+    },
+    {
+      "allele": "c282_CAT_H",
+      "codon": "CAT",
+      "aa": "H",
+      "pairs": 177
+    },
+    {
+      "allele": "c282_TGG_W",
+      "codon": "TGG",
+      "aa": "W",
+      "pairs": 161
+    },
+    {
+      "allele": "c282_CCG_P",
+      "codon": "CCG",
+      "aa": "P",
+      "pairs": 144
+    },
+    {
+      "allele": "c282_GAG_E",
+      "codon": "GAG",
+      "aa": "E",
+      "pairs": 129
+    },
+    {
+      "allele": "c282_AAG_K",
+      "codon": "AAG",
+      "aa": "K",
+      "pairs": 125
+    },
+    {
+      "allele": "c282_GCG_A",
+      "codon": "GCG",
+      "aa": "A",
+      "pairs": 109
+    },
+    {
+      "allele": "c282_GCT_A",
+      "codon": "GCT",
+      "aa": "A",
+      "pairs": 54
+    },
+    {
+      "allele": "c282_TCT_S",
+      "codon": "TCT",
+      "aa": "S",
+      "pairs": 42
+    },
+    {
+      "allele": "c282_CTG_L",
+      "codon": "CTG",
+      "aa": "L",
+      "pairs": 31
+    }
+  ],
+  "extra_mismatches_280": 224523,
+  "extra_mismatches_282": 1624805,
+  "ambiguous_one_codon": 8033823,
+  "ambiguous_multi_codon": 5024005,
+  "extra_codon_mismatches": {
+    "260": 712417,
+    "261": 566703,
+    "262": 296044,
+    "263": 373029,
+    "264": 343193,
+    "265": 287332,
+    "266": 160197,
+    "267": 123794,
+    "268": 126778,
+    "269": 95964,
+    "270": 47641,
+    "271": 141849,
+    "272": 39596,
+    "273": 276175,
+    "274": 152036,
+    "275": 88343,
+    "276": 804095,
+    "277": 137744,
+    "278": 425221,
+    "279": 295937,
+    "280": 224523,
+    "281": 889515,
+    "282": 1624805,
+    "283": 734768,
+    "284": 166534,
+    "285": 592970,
+    "286": 1105861,
+    "287": 90144,
+    "288": 134976,
+    "289": 663370,
+    "290": 152912,
+    "291": 476710,
+    "292": 672629,
+    "293": 106965,
+    "294": 188042,
+    "295": 488148,
+    "296": 151290,
+    "297": 199154,
+    "298": 158785,
+    "299": 158002,
+    "300": 223998,
+    "301": 449821,
+    "302": 249761,
+    "303": 471575,
+    "304": 203252,
+    "305": 206115,
+    "306": 328123,
+    "307": 202819,
+    "308": 338498,
+    "309": 175347,
+    "310": 263365,
+    "311": 87560,
+    "312": 107025,
+    "313": 101011,
+    "314": 157127,
+    "315": 284771,
+    "316": 332947,
+    "317": 137500,
+    "318": 102013,
+    "319": 204708,
+    "320": 145165,
+    "321": 238651,
+    "322": 236688,
+    "323": 475867,
+    "324": 536290,
+    "325": 466062,
+    "326": 430930,
+    "327": 526317,
+    "328": 552502,
+    "329": 868109
+  }
+}

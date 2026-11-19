@@ -68,12 +68,12 @@ CODON_AA = {
 AA_ORDER = list("ACDEFGHIKLMNPQRSTVWY*")
 
 
-def extract_cdna() -> str:
-    xml = zipfile.ZipFile(CDNA_DOCX).read("word/document.xml").decode()
+def extract_cdna(cdna_docx: Path = CDNA_DOCX) -> str:
+    xml = zipfile.ZipFile(cdna_docx).read("word/document.xml").decode()
     text = re.sub(r"<[^>]+>", "", re.sub(r"</w:p>", "\n", xml))
     seqs = re.findall(r"[acgtACGT]{100,}", text)
     if not seqs:
-        raise SystemExit(f"No cDNA sequence found in {CDNA_DOCX}")
+        raise SystemExit(f"No cDNA sequence found in {cdna_docx}")
     return max(seqs, key=len).upper()
 
 
@@ -94,9 +94,9 @@ def amplicon_codon_offset(codon: int) -> int:
     return 1 + (codon - 260) * 3
 
 
-def load_primers() -> list[dict]:
+def load_primers(primer_csv: Path = PRIMER_CSV) -> list[dict]:
     primers = []
-    with PRIMER_CSV.open() as handle:
+    with primer_csv.open() as handle:
         for row in csv.DictReader(handle):
             label = row["Primer Number"].strip()
             match = re.fullmatch(r"Primer\s+(\d+)", label)
@@ -114,30 +114,42 @@ def load_primers() -> list[dict]:
     return primers
 
 
-def build() -> None:
-    cdna = extract_cdna()
-    anchor_index = cdna.find(ANCHOR)
+def build(
+    cdna_docx: Path = CDNA_DOCX,
+    primer_csv: Path = PRIMER_CSV,
+    out_dir: Path = OUT,
+    anchor: str = ANCHOR,
+    amp_start: int = AMP_START,
+    amp_len: int = AMP_LEN,
+    design_first: int = DESIGN_FIRST,
+    design_last: int = DESIGN_LAST + 1,
+) -> None:
+    """Write designed alleles. design_last is inclusive and may fall outside the amplicon."""
+    cdna = extract_cdna(cdna_docx)
+    anchor_index = cdna.find(anchor)
     if anchor_index < 0:
         raise SystemExit("ORF anchor not found in the cDNA")
-    if cdna[AMP_START:AMP_START + 20] != ANCHOR_5P:
+    if amp_start == AMP_START and cdna[amp_start:amp_start + 20] != ANCHOR_5P:
         raise SystemExit(
-            f"Amplicon start {AMP_START} is {cdna[AMP_START:AMP_START + 20]}, expected {ANCHOR_5P}"
+            f"Amplicon start {amp_start} is {cdna[amp_start:amp_start + 20]}, expected {ANCHOR_5P}"
         )
-    amplicon = cdna[AMP_START:AMP_START + AMP_LEN]
-    if len(amplicon) != AMP_LEN:
-        raise SystemExit(f"Amplicon is {len(amplicon)} bp, expected {AMP_LEN}")
+    amplicon = cdna[amp_start:amp_start + amp_len]
+    if len(amplicon) != amp_len:
+        raise SystemExit(f"Amplicon is {len(amplicon)} bp, expected {amp_len}")
 
-    # Codon 260 starts one base into the amplicon; codon 329 ends on the last base.
-    if amplicon_codon_offset(260) != 1 or amplicon_codon_offset(329) + 3 != AMP_LEN:
-        raise SystemExit("Codon frame does not fill the amplicon as codons 260-329")
+    # Codon 260 starts one base into this amplicon. A longer amplicon can cover codon 330.
+    if amplicon_codon_offset(260) != 1:
+        raise SystemExit("Codon 260 does not start one base into the amplicon")
+    if amp_len == AMP_LEN and amplicon_codon_offset(329) + 3 != amp_len:
+        raise SystemExit("Codon frame does not fill the 211 bp amplicon as codons 260-329")
 
-    primers = load_primers()
+    primers = load_primers(primer_csv)
     by_pos = {item["position"]: item for item in primers}
-    expected = list(range(DESIGN_FIRST, DESIGN_LAST + 2))  # 267-330 inclusive
+    expected = list(range(design_first, design_last + 1))
     if sorted(by_pos) != expected:
         raise SystemExit(f"Primer positions {sorted(by_pos)} != {expected[0]}-{expected[-1]}")
 
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     alleles: dict[str, str] = {"WT": amplicon}
     annotations = {
         "WT": {"position": None, "codon": None, "aa": None, "degeneracy": None}
@@ -161,8 +173,8 @@ def build() -> None:
                 f"(placed {placed}, slot {slot}, genomic {genomic})"
             )
 
-        offset = genomic - AMP_START
-        inside = 0 <= offset and offset + 3 <= AMP_LEN
+        offset = genomic - amp_start
+        inside = 0 <= offset and offset + 3 <= amp_len
         codons[str(position)] = {
             "wt_codon": wt_codon,
             "wt_aa": CODON_AA[wt_codon],
@@ -193,7 +205,7 @@ def build() -> None:
                 "degeneracy": primer["degeneracy"],
             }
 
-    fasta_path = OUT / "designed_alleles.fa"
+    fasta_path = out_dir / "designed_alleles.fa"
     with fasta_path.open("w") as handle:
         for name, sequence in alleles.items():
             handle.write(f">{name}\n{sequence}\n")
@@ -201,11 +213,11 @@ def build() -> None:
     meta = {
         "cdna_length": len(cdna),
         "anchor_index": anchor_index,
-        "amplicon_start": AMP_START,
-        "amplicon_length": AMP_LEN,
+        "amplicon_start": amp_start,
+        "amplicon_length": amp_len,
         "amplicon": amplicon,
-        "r1_covers": [0, READ_LEN],
-        "r2_covers": [R2_OFFSET, AMP_LEN],
+        "r1_covers": [0, min(READ_LEN, amp_len)],
+        "r2_covers": [max(amp_len - READ_LEN, 0), amp_len],
         "n_alleles": len(alleles),
         "n_wt": 1,
         "skipped_outside_amplicon": skipped_outside,
@@ -213,11 +225,11 @@ def build() -> None:
         "codons": codons,
         "alleles": annotations,
     }
-    (OUT / "designed_alleles.json").write_text(json.dumps(meta, indent=2))
+    (out_dir / "designed_alleles.json").write_text(json.dumps(meta, indent=2))
     print(f"Wrote {len(alleles)} alleles to {fasta_path}")
     print(f"Skipped outside amplicon: {skipped_outside}")
     print(f"Wild-type-equivalent codons collapsed into WT: {len(skipped_wt)}")
-    designed = [p for p in range(DESIGN_FIRST, DESIGN_LAST + 1)]
+    designed = [p for p in expected if codons[str(p)]["in_amplicon"]]
     nns = [p for p in designed if codons[str(p)]["degeneracy"] == "NNS"]
     print(f"Designed codons in amplicon: {designed[0]}-{designed[-1]} ({len(designed)}), NNS at {nns}")
 
@@ -572,12 +584,35 @@ def _position_alleles(meta: dict, alleles: Counter, position: int) -> list[dict]
 
 
 def main() -> None:
-    if len(sys.argv) != 2 or sys.argv[1] not in {"build", "tally"}:
-        raise SystemExit("usage: analyze_bzip_library.py build|tally")
-    if sys.argv[1] == "build":
-        build()
-    else:
+    if len(sys.argv) < 2 or sys.argv[1] not in {"build", "tally"}:
+        raise SystemExit(
+            "usage: analyze_bzip_library.py build [--cdna --primers --outdir "
+            "--anchor --amp-start --amp-len --design-first --design-last] | tally"
+        )
+    if sys.argv[1] == "tally":
         tally()
+        return
+    import argparse
+    parser = argparse.ArgumentParser(prog="analyze_bzip_library.py build")
+    parser.add_argument("--cdna", type=Path, default=CDNA_DOCX)
+    parser.add_argument("--primers", type=Path, default=PRIMER_CSV)
+    parser.add_argument("--outdir", type=Path, default=OUT)
+    parser.add_argument("--anchor", default=ANCHOR)
+    parser.add_argument("--amp-start", type=int, default=AMP_START)
+    parser.add_argument("--amp-len", type=int, default=AMP_LEN)
+    parser.add_argument("--design-first", type=int, default=DESIGN_FIRST)
+    parser.add_argument("--design-last", type=int, default=DESIGN_LAST + 1)
+    args = parser.parse_args(sys.argv[2:])
+    build(
+        cdna_docx=args.cdna,
+        primer_csv=args.primers,
+        out_dir=args.outdir,
+        anchor=args.anchor,
+        amp_start=args.amp_start,
+        amp_len=args.amp_len,
+        design_first=args.design_first,
+        design_last=args.design_last,
+    )
 
 
 if __name__ == "__main__":

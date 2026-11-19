@@ -6,12 +6,15 @@ sequence is an exact match to an expected NNK or NNS allele. Upstream of this
 script, vsearch merges the pair and discards merges with expected error >= 0.5,
 and cutadapt trims a 3' Illumina adapter when one is present.
 
-Reads FASTQ on stdin. Writes a JSON summary to the path given as the first
-argument.
+Reads FASTQ on stdin. The alleles JSON is --meta. The summary path is the
+positional argument.
+
+    python count_paper_style.py --meta designed_alleles.json summary.json
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import sys
@@ -22,7 +25,6 @@ from analyze_bzip_library import CODON_AA
 
 ROOT = Path(__file__).resolve().parent
 META = ROOT / "bzip_mutation_profile" / "designed_alleles.json"
-AMP_LEN = 211
 
 DEGENERATE = {"N": "ACGT", "K": "GT", "S": "GC"}
 
@@ -47,12 +49,13 @@ def percentile(sorted_vals: list[float], percent: float) -> float:
     return sorted_vals[lo] * (hi - k) + sorted_vals[hi] * (k - lo)
 
 
-def load_reference() -> tuple[str, list[int | None], dict[int, int], dict[int, set[str]], dict[int, str]]:
-    meta = json.loads(META.read_text())
+def load_reference(meta_path: Path) -> tuple[str, list[int | None], dict[int, int], dict[int, set[str]], dict[int, str]]:
+    meta = json.loads(meta_path.read_text())
     wt = meta["amplicon"]
-    if len(wt) != AMP_LEN:
-        raise SystemExit(f"amplicon length {len(wt)} != {AMP_LEN}")
-    codon_at: list[int | None] = [None] * AMP_LEN
+    amp_len = int(meta["amplicon_length"])
+    if len(wt) != amp_len:
+        raise SystemExit(f"amplicon length {len(wt)} != {amp_len}")
+    codon_at: list[int | None] = [None] * amp_len
     offset_of: dict[int, int] = {}
     allowed: dict[int, set[str]] = {}
     wt_codon: dict[int, str] = {}
@@ -83,7 +86,7 @@ def classify(
     wt_codon: dict[int, str],
 ) -> tuple[str, int | None, str | None]:
     """Return (class, codon position, triplet). class is wt, programmed, or other."""
-    if len(seq) != AMP_LEN:
+    if len(seq) != len(wt):
         return "other", None, None
     if seq == wt:
         return "wt", None, None
@@ -105,10 +108,13 @@ def classify(
 
 
 def main() -> None:
-    if len(sys.argv) != 2:
-        raise SystemExit("usage: count_paper_style.py summary.json")
-    out_path = Path(sys.argv[1])
-    wt, codon_at, offset_of, allowed, wt_codon = load_reference()
+    parser = argparse.ArgumentParser(prog="count_paper_style.py")
+    parser.add_argument("--meta", type=Path, default=META)
+    parser.add_argument("summary", type=Path)
+    args = parser.parse_args()
+    out_path = args.summary
+    wt, codon_at, offset_of, allowed, wt_codon = load_reference(args.meta)
+    positions = sorted(allowed)
     classes: Counter[str] = Counter()
     per_codon: Counter[int] = Counter()
     alleles: Counter[tuple[int, str]] = Counter()
@@ -137,7 +143,7 @@ def main() -> None:
     retained = n
     programmed = classes["programmed"]
     wildtype = classes["wt"]
-    freqs = [per_codon[pos] / retained if retained else 0.0 for pos in range(267, 330)]
+    freqs = [per_codon[pos] / retained if retained else 0.0 for pos in positions]
     ordered = sorted(freqs)
     p10 = percentile(ordered, 10) if retained else 0.0
     p90 = percentile(ordered, 90) if retained else 0.0
@@ -150,7 +156,7 @@ def main() -> None:
     for (pos, triplet), count in alleles.items():
         by_pos[pos].append((triplet, count))
     codon_rows = []
-    for pos in range(267, 330):
+    for pos in positions:
         items = sorted(by_pos[pos], key=lambda item: -item[1])
         amino_acids = {CODON_AA[triplet] for triplet, _ in items}
         wt_aa = CODON_AA[wt_codon[pos]]
@@ -193,7 +199,7 @@ def main() -> None:
         "percentile_90": p90,
         "logdiff": logdiff,
         "screening_efficiency": efficiency,
-        "per_codon": {str(pos): per_codon[pos] for pos in range(267, 330)},
+        "per_codon": {str(pos): per_codon[pos] for pos in positions},
         "codons": codon_rows,
         "top_alleles": top_alleles,
         "alleles": [

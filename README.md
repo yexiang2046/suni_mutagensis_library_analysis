@@ -6,13 +6,13 @@ Method: Mighell, Toledano, and Lehner, *PLOS ONE* 2023. [10.1371/journal.pone.02
 
 ## Run
 
-Needs `nextflow`, `vsearch`, `cutadapt`, and `python3` on `PATH`. The count scripts use only the Python standard library. Reads, the cDNA, and the primer table are inputs, not part of this repository.
+Needs `nextflow`, `vsearch`, `cutadapt`, and `python3` on `PATH`. The count scripts use only the Python standard library. Reads, the cDNA sequence, and the primer table are inputs, not part of this repository. The cDNA is a FASTA or plain DNA file.
 
 ```bash
 nextflow run main.nf \
     --read1 R1.fastq.gz \
     --read2 R2.fastq.gz \
-    --cdna template.docx \
+    --cdna template.fa \
     --primers primers.csv
 ```
 
@@ -35,7 +35,7 @@ A designed codon that falls outside the amplicon is left out of the reference. E
 
 ```bash
 python3 analyze_bzip_library.py build \
-    --cdna template.docx \
+    --cdna template.fa \
     --primers primers.csv \
     --outdir alleles
 

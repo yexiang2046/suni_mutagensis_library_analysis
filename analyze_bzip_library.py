@@ -25,13 +25,12 @@ import csv
 import json
 import re
 import sys
-import zipfile
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "bzip_mutation_profile"
-CDNA_DOCX = ROOT / "JunB cDNA.docx"
+CDNA_FA = ROOT / "JunB_cDNA.fa"
 PRIMER_CSV = ROOT / "JunB SUNI Primers" / "primers_output_JunB_bZIP_codons267-330.csv"
 
 ANCHOR = "ATGTGCACTAAAATGGAACAGCCCTTCTAC"
@@ -68,13 +67,31 @@ CODON_AA = {
 AA_ORDER = list("ACDEFGHIKLMNPQRSTVWY*")
 
 
-def extract_cdna(cdna_docx: Path = CDNA_DOCX) -> str:
-    xml = zipfile.ZipFile(cdna_docx).read("word/document.xml").decode()
-    text = re.sub(r"<[^>]+>", "", re.sub(r"</w:p>", "\n", xml))
-    seqs = re.findall(r"[acgtACGT]{100,}", text)
-    if not seqs:
-        raise SystemExit(f"No cDNA sequence found in {cdna_docx}")
-    return max(seqs, key=len).upper()
+def load_cdna(cdna_path: Path = CDNA_FA) -> str:
+    """Read a FASTA or plain-text cDNA. The longest DNA record is the template."""
+    text = cdna_path.read_text()
+    records = []
+    current = []
+    saw_header = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith(">"):
+            saw_header = True
+            if current:
+                records.append("".join(current))
+                current = []
+            continue
+        current.append(re.sub(r"[^acgtACGT]", "", stripped))
+    if current:
+        records.append("".join(current))
+    if not saw_header:
+        sequence = re.sub(r"[^acgtACGT]", "", text)
+        records = [sequence] if sequence else []
+    if not records or max(map(len, records)) < 100:
+        raise SystemExit(f"No cDNA sequence found in {cdna_path}")
+    return max(records, key=len).upper()
 
 
 def expand_codon(pattern: str) -> list[str]:
@@ -115,7 +132,7 @@ def load_primers(primer_csv: Path = PRIMER_CSV) -> list[dict]:
 
 
 def build(
-    cdna_docx: Path = CDNA_DOCX,
+    cdna_path: Path = CDNA_FA,
     primer_csv: Path = PRIMER_CSV,
     out_dir: Path = OUT,
     anchor: str = ANCHOR,
@@ -125,7 +142,7 @@ def build(
     design_last: int = DESIGN_LAST + 1,
 ) -> None:
     """Write designed alleles. design_last is inclusive and may fall outside the amplicon."""
-    cdna = extract_cdna(cdna_docx)
+    cdna = load_cdna(cdna_path)
     anchor_index = cdna.find(anchor)
     if anchor_index < 0:
         raise SystemExit("ORF anchor not found in the cDNA")
@@ -594,7 +611,7 @@ def main() -> None:
         return
     import argparse
     parser = argparse.ArgumentParser(prog="analyze_bzip_library.py build")
-    parser.add_argument("--cdna", type=Path, default=CDNA_DOCX)
+    parser.add_argument("--cdna", type=Path, default=CDNA_FA)
     parser.add_argument("--primers", type=Path, default=PRIMER_CSV)
     parser.add_argument("--outdir", type=Path, default=OUT)
     parser.add_argument("--anchor", default=ANCHOR)
@@ -604,7 +621,7 @@ def main() -> None:
     parser.add_argument("--design-last", type=int, default=DESIGN_LAST + 1)
     args = parser.parse_args(sys.argv[2:])
     build(
-        cdna_docx=args.cdna,
+        cdna_path=args.cdna,
         primer_csv=args.primers,
         out_dir=args.outdir,
         anchor=args.anchor,

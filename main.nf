@@ -4,7 +4,7 @@ nextflow.enable.dsl = 2
 /*
  * Paper-style SUNi library count.
  * vsearch merges pairs and drops expected error >= maxee, cutadapt trims a
- * 3' adapter when present, and count_paper_style.py keeps only a perfect
+ * 3' adapter when present, and count.py keeps only a perfect
  * match to one designed NNK/NNS allele. The merged FASTQ is streamed.
  */
 
@@ -21,7 +21,7 @@ process build_alleles {
 
     script:
     """
-    python3 ${projectDir}/analyze_bzip_library.py build \
+    python3 ${projectDir}/analysis_library.py build \
         --cdna ${cdna} \
         --primers ${primers} \
         --outdir . \
@@ -55,7 +55,7 @@ process count_library {
         2> vsearch.log \\
     | cutadapt -a ${params.adapter} --overlap ${params.adapter_overlap} -o - - \\
         2> cutadapt.log \\
-    | python3 ${projectDir}/count_paper_style.py --meta ${alleles_json} paper_style_summary.json
+    | python3 ${projectDir}/count.py --meta ${alleles_json} paper_style_summary.json
     """
 }
 

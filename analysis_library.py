@@ -2,13 +2,13 @@
 """Designed-allele reference and bowtie2 tally for the JunB bZIP SUNI library.
 
 Build the reference (wild-type amplicon plus every NNK/NNS allele):
-    python analyze_bzip_library.py build
+    python analysis_library.py build
 
 Map pairs with bowtie2 against the wild-type amplicon and tally:
     bowtie2 --end-to-end --very-sensitive -p <threads> \\
         -x bzip_mutation_profile/wt_amplicon \\
         -1 R1.fastq.gz -2 R2.fastq.gz \\
-        | python analyze_bzip_library.py tally
+        | python analysis_library.py tally
 
 Bowtie2 2.5.5 `--best` aborts with internal exception #1 on these pairs, and a
 multi-FASTA of the one-codon alleles returns an arbitrary near-match (the
@@ -30,8 +30,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "bzip_mutation_profile"
-CDNA_FA = ROOT / "JunB_cDNA.fa"
-PRIMER_CSV = ROOT / "JunB SUNI Primers" / "primers_output_JunB_bZIP_codons267-330.csv"
+CDNA_FA = ROOT / "testdata" / "cdna.fa"
+PRIMER_CSV = ROOT / "testdata" / "primers.csv"
 
 ANCHOR = "ATGTGCACTAAAATGGAACAGCCCTTCTAC"
 AMP_START = 1062
@@ -603,14 +603,14 @@ def _position_alleles(meta: dict, alleles: Counter, position: int) -> list[dict]
 def main() -> None:
     if len(sys.argv) < 2 or sys.argv[1] not in {"build", "tally"}:
         raise SystemExit(
-            "usage: analyze_bzip_library.py build [--cdna --primers --outdir "
+            "usage: analysis_library.py build [--cdna --primers --outdir "
             "--anchor --amp-start --amp-len --design-first --design-last] | tally"
         )
     if sys.argv[1] == "tally":
         tally()
         return
     import argparse
-    parser = argparse.ArgumentParser(prog="analyze_bzip_library.py build")
+    parser = argparse.ArgumentParser(prog="analysis_library.py build")
     parser.add_argument("--cdna", type=Path, default=CDNA_FA)
     parser.add_argument("--primers", type=Path, default=PRIMER_CSV)
     parser.add_argument("--outdir", type=Path, default=OUT)

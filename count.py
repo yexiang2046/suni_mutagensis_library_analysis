@@ -9,7 +9,7 @@ and cutadapt trims a 3' Illumina adapter when one is present.
 Reads FASTQ on stdin. The alleles JSON is --meta. The summary path is the
 positional argument.
 
-    python count_paper_style.py --meta designed_alleles.json summary.json
+    python count.py --meta designed_alleles.json summary.json
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from analyze_bzip_library import CODON_AA
+from analysis_library import CODON_AA
 
 ROOT = Path(__file__).resolve().parent
 META = ROOT / "bzip_mutation_profile" / "designed_alleles.json"
@@ -108,7 +108,7 @@ def classify(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(prog="count_paper_style.py")
+    parser = argparse.ArgumentParser(prog="count.py")
     parser.add_argument("--meta", type=Path, default=META)
     parser.add_argument("summary", type=Path)
     args = parser.parse_args()

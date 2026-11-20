@@ -6,7 +6,7 @@ Method: Mighell, Toledano, and Lehner, *PLOS ONE* 2023. [10.1371/journal.pone.02
 
 ## Run
 
-Needs `nextflow`, `vsearch`, `cutadapt`, and `python3` on `PATH`. The count scripts use only the Python standard library. Reads, the cDNA sequence, and the primer table are inputs, not part of this repository. The cDNA is a FASTA or plain DNA file.
+Needs `nextflow`, `vsearch`, `cutadapt`, and `python3` on `PATH`. The count scripts use only the Python standard library. Read pairs are inputs and are not part of this repository. An example cDNA sequence and primer table are in `testdata/`. The cDNA is a FASTA or plain DNA file.
 
 ```bash
 nextflow run main.nf \
@@ -16,7 +16,13 @@ nextflow run main.nf \
     --primers primers.csv
 ```
 
-`build_alleles` writes `designed_alleles.fa` and `designed_alleles.json`. `count_library` streams the merge, the adapter trim, and the perfect-match count, so the merged FASTQ is not stored. Published files go to `results/`: `paper_style_summary.json`, `vsearch.log`, and `cutadapt.log`.
+`build_alleles` writes `designed_alleles.fa` and `designed_alleles.json`. `count_library` streams the merge, the adapter trim, and the perfect-match count, so the merged FASTQ is not stored. The workflow publishes five files to `results/`:
+
+- `designed_alleles.fa`
+- `designed_alleles.json`
+- `paper_style_summary.json`
+- `vsearch.log`
+- `cutadapt.log`
 
 | Parameter | Role |
 | --- | --- |
@@ -31,10 +37,10 @@ A designed codon that falls outside the amplicon is left out of the reference. E
 
 ## Scripts
 
-`analyze_bzip_library.py build` constructs the allele reference from the cDNA and primer CSV. `count_paper_style.py` reads merged FASTQ on stdin and writes the summary. `tally` is a separate bowtie2 end-to-end count against the wild-type amplicon and is not a Nextflow process.
+`analysis_library.py build` constructs the allele reference from the cDNA sequence and primer CSV. `count.py` reads merged FASTQ on stdin and writes the summary. Those two commands are the processes in `main.nf`.
 
 ```bash
-python3 analyze_bzip_library.py build \
+python3 analysis_library.py build \
     --cdna template.fa \
     --primers primers.csv \
     --outdir alleles
@@ -42,7 +48,7 @@ python3 analyze_bzip_library.py build \
 vsearch --fastq_mergepairs R1.fastq.gz --reverse R2.fastq.gz \
     --fastq_maxee 0.5 --threads 8 --fastqout - \
 | cutadapt -a AGATCGGAAGAGC --overlap 10 -o - - \
-| python3 count_paper_style.py --meta alleles/designed_alleles.json summary.json
+| python3 count.py --meta alleles/designed_alleles.json summary.json
 ```
 
 The summary reports retained reads, wild-type, programmed, and other fractions, per-codon frequencies, LogDiff, and screening efficiency. LogDiff is log10 of the 90th/10th percentile of per-codon programmed frequency. Screening efficiency is the programmed fraction divided by 10^LogDiff.

@@ -21,7 +21,7 @@ process build_alleles {
 
     script:
     """
-    python3 ${projectDir}/analysis_library.py build \
+    python3 ${projectDir}/bin/analysis_library.py build \
         --cdna ${cdna} \
         --primers ${primers} \
         --outdir . \
@@ -55,7 +55,7 @@ process count_library {
         2> vsearch.log \\
     | cutadapt -a ${params.adapter} --overlap ${params.adapter_overlap} -o - - \\
         2> cutadapt.log \\
-    | python3 ${projectDir}/count.py --meta ${alleles_json} paper_style_summary.json
+    | python3 ${projectDir}/bin/count.py --meta ${alleles_json} paper_style_summary.json
     """
 }
 

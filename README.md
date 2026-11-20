@@ -6,9 +6,12 @@ Method: Mighell, Toledano, and Lehner, *PLOS ONE* 2023. [10.1371/journal.pone.02
 
 ## Run
 
-Needs `nextflow`, `vsearch`, `cutadapt`, and `python3` on `PATH`. The count scripts use only the Python standard library. Read pairs are inputs and are not part of this repository. An example cDNA sequence and primer table are in `testdata/`. The cDNA is a FASTA or plain DNA file.
+`setup.sh` installs Java, vsearch, cutadapt, and Nextflow into `.tools/`. Python 3.9 or later must already be installed. The count scripts use only the Python standard library. Read pairs are inputs and are not part of this repository. An example cDNA sequence and primer table are in `testdata/`. The cDNA is a FASTA or plain DNA file.
 
 ```bash
+./setup.sh
+source env.sh
+
 nextflow run main.nf \
     --read1 R1.fastq.gz \
     --read2 R2.fastq.gz \

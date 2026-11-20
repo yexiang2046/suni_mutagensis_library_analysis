@@ -1,0 +1,12 @@
+*.fastq.gz
+*.fastq
+.tools/
+env.sh
+tools/
+pytools/
+.mamba/
+.venv/
+work/
+.nextflow/
+.nextflow.log*
+results/

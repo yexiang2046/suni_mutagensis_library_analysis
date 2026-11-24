@@ -113,7 +113,11 @@ fi
 
 if [[ ! -x "$VENV/bin/python" ]]; then
     rm -rf "$VENV"
-    python3 -m venv --copies "$VENV"
+    # Some builds (e.g. macOS framework Python) refuse --copies; fall back to symlinks.
+    if ! python3 -m venv --copies "$VENV" 2>/dev/null; then
+        rm -rf "$VENV"
+        python3 -m venv "$VENV"
+    fi
 fi
 cutadapt_version=""
 if [[ -x "$VENV/bin/cutadapt" ]]; then

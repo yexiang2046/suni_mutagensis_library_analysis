@@ -130,9 +130,15 @@ else
     "$VENV/bin/python" -m pip install --disable-pip-version-check "cutadapt==${CUTADAPT_VERSION}"
 fi
 
+# The -dist launcher has the jar appended, so read it as bytes (LC_ALL=C);
+# otherwise BSD sed fails with "illegal byte sequence" under a UTF-8 locale.
+nextflow_file_version() {
+    LC_ALL=C sed -n "s/^NXF_VER=\${NXF_VER:-'\([^']*\)'}/\1/p" "$BIN/nextflow"
+}
+
 nextflow_version=""
 if [[ -f "$BIN/nextflow" ]]; then
-    nextflow_version=$(sed -n "s/^NXF_VER=\${NXF_VER:-'\([^']*\)'}/\1/p" "$BIN/nextflow")
+    nextflow_version=$(nextflow_file_version)
 fi
 if [[ "$nextflow_version" == "$NEXTFLOW_VERSION" ]]; then
     printf 'nextflow %s is already installed\n' "$NEXTFLOW_VERSION"
@@ -155,6 +161,6 @@ printf 'java: %s\n' "${java_text%%$'\n'*}"
 vsearch_text=$("$BIN/vsearch" --version 2>&1 || true)
 printf 'vsearch: %s\n' "${vsearch_text%%$'\n'*}"
 printf 'cutadapt: %s\n' "$("$VENV/bin/cutadapt" --version)"
-nextflow_version=$(sed -n "s/^NXF_VER=\${NXF_VER:-'\([^']*\)'}/\1/p" "$BIN/nextflow")
+nextflow_version=$(nextflow_file_version)
 printf 'nextflow: %s\n' "$nextflow_version"
 printf 'source %s\n' "$ROOT/env.sh"
